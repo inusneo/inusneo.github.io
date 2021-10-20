@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Common */
+
+body, div, span, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(26, 26, 26);
+  font-family: 'Poppins', sans-serif;
+  gap: 30px;
+}
+
+/* Button */
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 60px;
+  line-height: 50px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-size: 18px;
+  appearance: none;
+  cursor: pointer;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #3e5151, #decba4);
+  transform: translate(-50%, -50%);
+  transition: all .3s linear 0s;
+}
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+.btn span {
+  z-index: 1;
+  position: relative;
+}

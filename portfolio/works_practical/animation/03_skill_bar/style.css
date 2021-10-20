@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* Common */
+
+body, div, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #333;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Skills-bar */
+
+.skills-bar {
+  width: 700px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: rgb(39, 39, 39);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.bar {
+  margin: 20px 0;
+}
+.bar:first-child {
+  margin-top: 0;
+}
+.title {
+  margin-bottom: 5px;
+}
+.title span {
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 500;
+  animation: showTitle 0.5s 0.5s linear forwards;
+}
+@keyframes showTitle {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background: #333;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6),
+                    0 1px rgba(0, 0, 0, 0.25);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progress 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.progress-line span {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #FDC830, #F37335);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progress 1s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes progress {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 85%;
+}
+.progress-line.javascript span {
+  width: 70%;
+}
+.progress-line.react span {
+  width: 60%;
+}
+.progress-line.jquery span {
+  width: 80%;
+}
+.progress-line span:before {
+  opacity: 0;
+  position: absolute;
+  content: '';
+  right: 0;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-top-color: #eee;
+  animation: percent 0.5s 1s linear forwards;
+}
+.progress-line span:after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background: #eee;
+  color: rgb(39, 39, 39);
+  font-size: 12px;
+  font-weight: 500;
+  animation: percent 0.5s 1s linear forwards;
+}
+@keyframes percent {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span:after {
+  content: '90%';
+}
+.progress-line.css span:after {
+  content: '85%';
+}
+.progress-line.javascript span:after {
+  content: '70%';
+}
+.progress-line.react span:after {
+  content: '60%';
+}
+.progress-line.jquery span:after {
+  content: '80%';
+}

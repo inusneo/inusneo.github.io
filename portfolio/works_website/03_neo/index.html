@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>NEO SS</title>
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Include Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <div class="skipNavi">
+    <ul>
+      <li><a href="#container">본문 바로가기</a></li>
+      <li><a href="#gnb">주 메뉴 바로가기</a></li>
+    </ul>
+  </div>
+
+  <div id="wrap">
+    <!-- Include Header -->
+    <div class="include-header"></div>
+
+    <!-- Container -->
+    <main id="container">
+      <section class="main-visual">
+        <h2 class="blind">Main Visual Section</h2>
+        <div class="inner">
+          <div class="main-visual__box">
+            <h3 class="main-visual__tit">
+              <strong class="point-color">EDITION</strong><br />
+              Tuxedo Black
+            </h3>
+            <div class="shadow-box">
+              <p class="shadow-box__tit">NEO만의 스타일에 블랙을 입히다.</p>
+              <p class="shadow-box__text">
+                턱시도 블랙 외장 컬러와 볼케이노 레드 포인트 인테리어 시트로 턱시도 블랙 패키지만의 더욱 강렬하고 세련된 멋을 살렸습니다. 블랙 색상을 인테리어 전반에 적용하여 실내에서도 턱시도 블랙 패키지만의 특색을 살렸습니다. 운전석과 조수석 도어에 레드 포인트 컬러를 적용하여 강렬한 스포츠카의 느낌을 더했습니다. 레드 컬러 스티치로 포인트를 준 가죽시트로 완성도 높은 인테리어를 구현했습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- content section 1 -->
+      <div class="inner">
+        <h2 class="blind">Main Contents Section 01</h2>
+        <article class="main-info">
+          <h3 class="main-tit">ALL NEW <strong class="point-color">NEO SS</strong></h3>
+          <figure class="main-info__box"> 
+            <img src="images/main_intro_front.jpg" alt="회색 NEO SS 정면 이미지">
+            <img src="images/main_intro_back.jpg" alt="회색 NEO SS 후면 이미지">
+            <figcaption>
+              스피드와 파워, 정교한 엔지니어링이 완성시킨 완벽한 스포츠카!
+            </figcaption>
+          </figure>
+          <p class="main-info__text">
+            차체의 무게를 줄이고(90KG) 서스펜션을 최적화 하여 가장 완벽한 드라이빙으로 완전히 새롭게 태어났습니다.<br />세련된 디테일과 역동적이고 입체적인 디자인으로 남성적인 머슬카의 이미지를 더하고,<br /> 풀 스크린 태블릿을 포함한 첨단 인테리어로 사용자의 편의성을 극대화시켰습니다.
+          </p>
+        </article>
+        <article class="main-review">
+          <h3 class="main-tit">VIDEO <strong class="point-color">REVIEW</strong></h3>
+          <div class="main-review__video">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/jjreds1X14Y" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p class="main-review__text">
+            <strong class="point-color">NEO SS</strong>를 영상으로 더욱 자세하게 만나보세요!
+          </p>
+          <ul class="main-review__award">
+            <li><img src="images/award_01.jpg" alt="모터 트렌드(Motor Trend) 2016 올해의 차 선정"></li>
+            <li><img src="images/award_02.jpg" alt="카 앤 드라이버(Car&Driver) 베스트 10 모델 선정"></li>
+            <li><img src="images/award_03.jpg" alt="J.D. Power 2016 중형 스포츠카 부문 내구 품질 4년 연속 1위"></li>
+          </ul>
+        </article>
+      </div>
+      <div class="main-bg"></div>
+
+      <!-- content section 2 -->
+      <div class="inner">
+        <h2 class="blind">Main Contents Section 02</h2>
+        <article class="main-drive">
+          <h3 class="main-tit">DRIVE <strong class="point-color">PROGRAM</strong></h3>
+          <dl class="main-tit__sub">
+            <dt>시승 신청</dt>
+            <dd>
+              고객님께 최고의 만족을 드리기 위해 시승신청 서비스를 제공하고 있습니다.<br />
+              전국 전시장에 있는 차량을 직접 만나보세요.
+            </dd>
+          </dl>
+          <P class="main-drive__procedure">
+            절차 : 시승신청 &gt; 카매니저 시승 확인 통화 &gt; 예약확정 &gt; 시승일정 확인 SMS &gt; 시승
+          </P>
+          <img src="images/main_drive.jpg" alt="타보면 안다 드라이브 NEOSS 니오 시승 프로그램, 시승 프로그램을 통해 니오를 직접 경험해 보세요" />
+          <section class="main-form">
+            <form action="/" method="POST">
+              <fieldset>
+                <legend>시승 신청서 필수 입력 항목</legend>
+                <ol>
+                  <li>
+                    <label for="userName">이름</label>
+                    <input type="text" id="userName" class="box-whole" required />
+                  </li>
+                  <li>
+                    <label for="userTel">연락처</label>
+                    <select id="userTel" class="user-tel">
+                      <option value="010">010</option>
+                      <option value="011">011</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                    </select> -
+                    <input type="tel" maxlength="4" title="전화번호 앞자리 입력" required /> -
+                    <input type="tel" maxlength="4" title="전화번호 뒷자리 입력" required />
+                  </li>
+                  <li>
+                    <label for="userEmail">이메일</label>
+                    <input type="email" id="userEmail" /> @
+                    <input type="email" title="도메인명을 입력해주세요" />
+                    <select title="이메일 도메인 선택">
+                        <option value>직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="daum.net">daum.net</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="userAdr">주소</label>
+                    <input type="text" id="userAdr" required />
+                  </li>
+                  <li class="main-form__agree">
+                    <span class="main-form__radio-text">개인정보 수집 및 이용에 동의합니다.</span>
+                    <input type="radio" id="yes" name="agree" checked/>
+                    <label for="yes">예</label>
+                    <input type="radio" id="no" name="agree" />
+                    <label for="no">아니오</label>
+                  </li>
+                </ol>
+              </fieldset>
+              <div class="main-form__btn">
+                <input class="form-btn" type="submit" value="신청하기" />
+                <input class="form-btn" type="reset" value="취소하기" />
+              </div>
+            </form>
+          </section>
+        </article>
+        <article class="main-estimate">
+          <h3 class="main-tit">MAKE <strong class="point-color">ESTIMATE</strong></h3>
+          <dl class="main-tit__sub">
+            <dt>빠른 견적 상담 신청</dt>
+            <dd>차량 구매에 관한 모든 것을 친절하게 알려드립니다. 카매니저에게 맞춤 상담을 신청하세요.</dd>
+            <dd class="sub-dot">카매니저 선택은 직접 선택 또는 고객님의 회원정보 기준으로 가까운 전시장의 카매니저를 추천 받는 두 가지 방법이 있습니다.</dd>
+            <dd class="sub-dot">고객님의 오토카드 포인트 할인과 재구매 할인 내용은 해당 카매니저를 통해 상세 견적 시 반영할 수 있습니다.</dd>
+          </dl>
+          <section class="main-estimate__box">
+            <section class="main-form">
+              <form action="/" method="POST">
+                <fieldset>
+                  <legend>시승 신청서 필수 입력 항목</legend>
+                  <ol>
+                    <li>
+                      <label for="userName">이름</label>
+                      <input type="text" id="userName" class="box-whole" required />
+                    </li>
+                    <li>
+                      <label for="userTel">연락처</label>
+                      <select id="userTel" class="user-tel">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                      </select> -
+                      <input type="tel" maxlength="4" title="전화번호 앞자리 입력" required /> -
+                      <input type="tel" maxlength="4" title="전화번호 뒷자리 입력" required />
+                    </li>
+                    <li>
+                      <label for="userEmail">이메일</label>
+                      <input type="email" id="userEmail" /> @
+                      <input type="email" title="도메인명을 입력해주세요" />
+                      <select title="이메일 도메인 선택">
+                          <option value>직접입력</option>
+                          <option value="naver.com">naver.com</option>
+                          <option value="gmail.com">gmail.com</option>
+                          <option value="daum.net">daum.net</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="userAdr">주소</label>
+                      <input type="text" id="userAdr" required />
+                    </li>
+                    <li class="main-form__agree">
+                      <span class="main-form__radio-text">개인정보 수집 및 이용에 동의합니다.</span>
+                      <input type="radio" id="yes" name="agree" checked/>
+                      <label for="yes">예</label>
+                      <input type="radio" id="no" name="agree" />
+                      <label for="no">아니오</label>
+                    </li>
+                  </ol>
+                </fieldset>
+                <div class="main-form__btn">
+                  <input class="form-btn" type="submit" value="신청하기" />
+                  <input class="form-btn" type="reset" value="취소하기" />
+                </div>
+              </form>
+            </section>
+            <a href="#" class="estimate-btn">
+              <img src="images/main_estimate_direct.jpg" alt="DIRECT CONTECT US" />
+            </a>
+          </section>
+        </article>
+        <article class="main-care">
+          <h3 class="main-tit">CARE <strong class="point-color">PROGRAM</strong></h3>
+          <dl class="main-tit__sub">
+            <dt>NEO 프리미엄 케어 프로그램</dt>
+            <dd>최고의 고객케어를 지향하는 니오만의 완벽한 고객과의 약속입니다.</dd>
+            <dd class="sub-dot">차량을 구입(등록)하신 고객님께 차별화된 서비스 제공을 위하여 차체 및 일반부품, 엔진 및 동력 전달계통<br />주요 부품 모두의 보증기간을 5년(60개월) 또는 100,000km로 연장해 드립니다.</dd>
+          </dl>
+          <section class="main-care__box">
+            <img src="images/care_text.jpg" alt="5년 Complete care 5년/100,000mk 보증 기간 적용">
+            <ul>
+              <li>- 기타 세부내용 및 보증에서 제외되는 사항은 차량 구매 시 제공되는 보증서에 기재된 내용을 참조하여 주시기 바랍니다.</li>
+              <li>- 연장된 보증기간 중 차량을 수리하실 경우 등록증을 제시하여 주시기 바랍니다.</li>
+              <li>- 보증연장은 당사로부터 신차 구입 고객에 한하여 적용됩니다.</li>
+            </ul>
+          </section>
+        </article>
+        <article class="main-location">
+          <h3 class="main-tit">SHOWROOM <strong class="point-color">LOACTION</strong></h3>
+          <dl class="main-tit__sub">
+            <dt>가까운 전시장 찾기</dt>
+            <dd class="search-map">
+              <form action="/" method="POST">
+                <fieldset>
+                  <legend>검색</legend>
+                  <ul>
+                    <li>
+                      <label for="search">검색</label>
+                      <input type="search" id="search" placeholder="찾고자 하시는 지역이나 전시장명을 입력해 주세요." />
+                      <button class="bx bx-search"></button>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+            </dd>
+          </dl>
+          <div class="main-location__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25304.113242190328!2d126.67696739206391!3d37.55473028348142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc59a70ef9868664e!2z7ZWc6rWt7KeA7JegKOyjvCk!5e0!3m2!1sko!2skr!4v1629796222321!5m2!1sko!2skr" width="1200" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- upscroll btn -->
+    <aside id="btnScrollBox" class="upside-box">
+      <button id="btnScrollTop" class="upside-btn"><i class="bx bx-up-arrow-alt"></i></button>
+    </aside>
+
+    <!-- Include Footer -->
+    <div class="include-footer"></div>
+  </div>
+  <script>
+    $('.include-header').load('pages/header.html');
+    $('.include-footer').load('pages/footer.html');
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+
+/* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Cormorant', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #c5a47e;
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Header */
+
+.header {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #242223;
+}
+.gnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gnb a {
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all .3s linear;
+}
+.gnb a:hover {
+  color: #746350;
+  text-decoration: underline;
+}
+
+/* Landing */
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+.landing {
+  width: 100%;
+  height: 100%;
+  background-color: #242223;
+}
+/*
+.dim {
+  display: none;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all .3s linear;
+}
+.dim.on {
+  opacity: 1;
+}
+*/
+.desktop {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 9882px;
+}
+.tablet {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 9966px;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+.tablet img,
+.mobile img {
+  width: auto;
+}
+.mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6425px;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}

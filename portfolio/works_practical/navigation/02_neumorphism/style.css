@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* Common */
+body, h1, div, a, i {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #efeeee;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* content details */
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #efeeee;
+  box-shadow: -7px -7px 20px 0 #fff9,
+              -4px -4px 5px 0 #fff9,
+              7px 7px 20px 0 #0002,
+              4px 4px 5px 0 #0001,
+              inset 0 0 0 0 #fff9,
+              inset 0 0 0 0 #0001,
+              inset 0 0 0 0 #fff9,
+              inset 0 0 0 0 #0001;
+  transition: box-shadow .6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  font-size: 30px;
+}
+
+/* icon details */
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-instagram {
+  background: linear-gradient(to right bottom, #ff8202, #a903fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-youtube {
+  color: #ee4056;
+}
+.fa-google {
+  text-shadow: 0px 1px 1px #fff;
+}
+
+/* active effect */
+.btn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+              inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3),
+              inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);             
+}
+.btn:focus {
+  box-shadow: none;
+  box-shadow: -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+              4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+              inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3), 
+              inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
+}

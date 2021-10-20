@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Reset CSS */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body, main, header, footer, div, h1, h2, h3, h4, h5, h6, p, pre, ol, dl, dt, dd, ul, li, form, fieldset, input, textarea, blockquote, table, thead, tbody, tfoot, tr, th, td, section, article, figure, figcaption, nav, aside {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+table {
+  border-collapse: collapse;
+}
+caption, th {
+  text-align: left;
+}
+address, caption, cite, code, em, th {
+  font-style: normal;
+  font-weight: normal;
+}
+ul, ol, dl {
+  list-style: none;
+}
+img, table, button, abbr, fieldset, input, select {
+  border: none;
+}
+img, button, input, textarea, label {
+  vertical-align: middle;
+}
+input, button {
+  appearance: none;
+  background: none;
+}
+button {
+  cursor: pointer;
+}
+q:after, q::before {
+  content: '';
+}
+a {
+  text-decoration: none;
+}
+.skipNavi, .blind, legend, caption {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}    

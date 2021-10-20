@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Common */
+body, div, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(7, 7, 7);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+}
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #080700;
+  animation: circle 2s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, rgba(255, 37, 37, 0.4));
+  background-size: 100px 180px;
+  background-repeat: no-repeat;
+  border-radius: 100px 0 0 100px;
+  content: '';
+}
+.loader:after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ff1616;
+  box-shadow: 0 0 10px #ff1616,
+              0 0 20px #ff1616,
+              0 0 30px #ff1616,
+              0 0 40px #ff1616,
+              0 0 50px #ff1616;
+  content: '';
+  z-index: 10;
+  transform: translateX(-50%);
+}
+.loader span {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: rgb(7, 7, 7);
+}
+
+/* inner */
+.loader.inner {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  animation: circle 2s linear .5s infinite;
+}
+.loader.inner:before {
+  background: linear-gradient(to top, transparent, rgba(255, 233, 36, 0.4));
+}
+.loader.inner:after {
+  background: #fce516;
+  box-shadow: 0 0 10px #fce516,
+              0 0 20px #fce516,
+              0 0 30px #fce516,
+              0 0 40px #fce516,
+              0 0 50px #fce516;
+}
+
+/* center */
+.loader.center {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  animation: circle 2s linear .8s infinite;
+}
+.loader.center:before {
+  background: linear-gradient(to top, transparent, rgba(36, 222, 255, 0.4));
+}
+.loader.center:after {
+  background: #16f4fc;
+  box-shadow: 0 0 10px #16f4fc,
+              0 0 20px #16f4fc,
+              0 0 30px #16f4fc,
+              0 0 40px #16f4fc,
+              0 0 50px #16f4fc;
+}

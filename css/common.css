@@ -1,0 +1,47 @@
+/* Common CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+:root {
+  --color-deep-dark: #131416;
+  --color-dark: #1c1d24;
+  --color-white: #f9fffd;
+  --color-point: #53f6c7;
+  
+  --font-giant: 12.5rem;  /* 200px */
+  --font-giant-tab: 7.5rem;  /* 120px */
+  --font-huge: 4rem;  /* 64px */
+  --font-large: 3rem;  /* 48px */
+  --font-medium: 1.5rem;  /* 24px */
+  --font-regular: 1.125rem; /* 18px */
+  --font-small: 0.875rem; /* 14px */
+  --font-micro: 0.750rem; /* 12px */
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-deep-dark );
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-deep-dark );
+  font-size: 1rem;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.tit-huge {
+  opacity: 0.05;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-poppins {
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.color-point {
+  color: var(--color-point);
+}

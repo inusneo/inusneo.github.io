@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Using Vanilla tilt &lt; CSS Hover effects | Yeongjin's portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <span class="shape_left"></span>
+    <span class="shape_middle"></span>
+    <span class="shape_right"></span>
+    <h1>Hover On The Card</h1>
+    <div class="card-box">
+      <div class="card">
+        <span class="card__num">01</span>
+        <h2>Title I</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolorem, eligendi repudiandae labore dicta mollitia quae facere tenetur laborum.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="card">
+        <span class="card__num">02</span>
+        <h2>Title II</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolorem, eligendi repudiandae labore dicta mollitia quae facere.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="card">
+        <span class="card__num">03</span>
+        <h2>Title III</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolorem, eligendi repudiandae labore dicta mollitia quae facere tenetur laborum.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Vanillat-titl.js -->
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5
+    });
+  </script>
+</body>
+</html>

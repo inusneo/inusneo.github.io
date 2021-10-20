@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* Common */
+body, section, h2, div, p, figure, figcaption, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #999;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+.blind, input[type=radio] {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+/* slide-box */
+.slide-box {
+  position: relative;
+  overflow: hidden;
+  width: 540px;
+  height: 210px;
+  border: 2px solid rgb(126, 164, 212);
+}
+.slide-box__view  {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 540px;
+  height: 552px;
+  padding: 20px;
+  transition: 0.5s;
+}
+input[id=tab1]:checked ~ .slide-box .slide-box__view {
+  top: 0;
+}
+input[id=tab2]:checked ~ .slide-box .slide-box__view {
+  top: -184px;
+}
+input[id=tab3]:checked ~ .slide-box .slide-box__view {
+  top: -368px;
+}
+/* content */
+.slide-box__content {
+  margin-bottom: 30px;
+}
+.slide-box__person {
+  width: 300px;
+  margin-top: 20px;
+}
+.slide-box__person:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.slide-box__person img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+.slide-box__person .slide-box__person--name {
+  float: left;
+  width: 230px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+.slide-box__person .slide-box__person--job {
+  float: left;
+  width: 230px;
+  color: #999;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* btn */
+.btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background: rgb(126, 164, 212);
+  cursor: pointer;
+  transition: 0.5s;
+}
+label:hover {
+  background: rgb(21, 115, 255);
+}
+input[id=tab1]:checked ~ .slide-box .btn label[for=tab1],
+input[id=tab2]:checked ~ .slide-box .btn label[for=tab2],
+input[id=tab3]:checked ~ .slide-box .btn label[for=tab3] {
+  background: rgb(21, 115, 255);
+}
+

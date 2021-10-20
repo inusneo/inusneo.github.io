@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* Common */
+body, section, h2, div, ul, li, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+.blind, input[type=radio] {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+/* slide section */
+.slide-box {
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  height: 760px;
+}
+.slide-box__view  {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3600px;
+  height: 760px;
+  font-size: 0;
+  transition: 0.5s;
+}
+input[id=tab1]:checked ~ .slide-box .slide-box__view {
+  left: 0;
+}
+input[id=tab2]:checked ~ .slide-box .slide-box__view {
+  left: -1200px;
+}
+input[id=tab3]:checked ~ .slide-box .slide-box__view {
+  left: -2400px;
+}
+/* title-box */
+.title-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 760px;
+  padding: 60px;
+  background: rgb(0, 0, 0, 0.6);
+  font-size: 18px;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.title-box .title {
+  font-size: 46px;
+}
+.title-box p {
+  color: #999;
+}
+input[id=tab1]:checked ~ .slide-box .content01,
+input[id=tab2]:checked ~ .slide-box .content02,
+input[id=tab3]:checked ~ .slide-box .content03 {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.5s;
+  z-index: 100;
+}
+.more {
+  width: 200px;
+  height: 50px;
+  margin-top: 100px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.more:hover {
+  border: none;
+  background: #fff;
+  color: #333;
+  transition: 0.5s;
+}
+/* btn */
+.btn {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+label {
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  margin-right: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+label:hover {
+  background: #333;
+  border: 1px solid #fff;
+}
+label.btn__last {
+  margin-right: 30px;
+}
+input[id=tab1]:checked ~ .slide-box .btn label[for=tab1],
+input[id=tab2]:checked ~ .slide-box .btn label[for=tab2],
+input[id=tab3]:checked ~ .slide-box .btn label[for=tab3] {
+  background: #333;
+  border: 1px solid #fff;
+}
+

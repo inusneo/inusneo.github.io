@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeongjin's Portfolio</title>
+  <!-- Swiper Slider CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Typing Animation CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- Insert jQuery -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- Swiper Slider CDN -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/typing.js" defer></script>
+  <script src="js/slide.js"></script>
+  <script src="js/tabs.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="on">
+  <!-- Loading Page -->
+  <div id="loader" class="loader">
+    <div class="loader__box">
+      <div class="loader__dot" style="--i:0;"></div>
+      <div class="loader__dot" style="--i:1;"></div>
+      <div class="loader__dot" style="--i:2;"></div>
+      <div class="loader__dot" style="--i:3;"></div>
+      <div class="loader__dot" style="--i:4;"></div>
+      <div class="loader__dot" style="--i:5;"></div>
+      <div class="loader__dot" style="--i:6;"></div>
+      <div class="loader__dot" style="--i:7;"></div>
+      <div class="loader__dot" style="--i:8;"></div>
+      <div class="loader__dot" style="--i:9;"></div>
+    </div>
+    <h2 class="loader__tit">Loading...</h2>
+    <div class="loader__box">
+      <div class="loader__dot" style="--i:0;"></div>
+      <div class="loader__dot" style="--i:1;"></div>
+      <div class="loader__dot" style="--i:2;"></div>
+      <div class="loader__dot" style="--i:3;"></div>
+      <div class="loader__dot" style="--i:4;"></div>
+      <div class="loader__dot" style="--i:5;"></div>
+      <div class="loader__dot" style="--i:6;"></div>
+      <div class="loader__dot" style="--i:7;"></div>
+      <div class="loader__dot" style="--i:8;"></div>
+      <div class="loader__dot" style="--i:9;"></div>
+    </div>
+  </div>
+  <!-- // Loading Page -->
+
+  <!-- Skip Navigation -->
+  <div id="skipNavi"><a href="#main">본문 바로가기</a></div>
+  <!-- // Skip Navigation -->
+  <div class="dim"></div>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="inner">
+      <h1 class="logo">
+        <a href="index.html" title="홈 바로가기"><img src="images/logo.png" alt="ATOZ 로고" /></a>
+      </h1>
+      <nav id="gnb" class="gnb">
+        <h2 class="blind">주메뉴</h2>
+        <div class="logo-mobile"><img src="images/logo.png" alt="ATOZ 로고" /></div>
+        <div class="gnb__wrap">
+          <a href="#content1" class="content1 active">Home</a>
+          <a href="#content2" class="content2">About Me</a>
+          <a href="#content3" class="content3">Skills</a>
+          <a href="#content4" class="content4">Portfolio</a>
+          <a href="#content5" class="content5">Practical</a>
+          <a href="#content6" class="content6">Records</a>
+        </div>
+      </nav>
+      <!-- Drawer For Tablet, Mobile -->
+      <div class="btn-drawer">
+        <button type="button" class="btn-menu">
+          <span>햄버거 메뉴바 상단 도형</span>
+          <span>햄버거 메뉴바 중앙 도형</span>
+          <span>햄버거 메뉴바 하단 도형</span>
+        </button>
+      </div>
+      <!-- // Drawer For Tablet, Mobile -->
+    </div>
+  </header>
+  <!-- // Header -->
+
+  <!-- Main -->
+  <main role="main" id="main" class="main">
+    <div class="inner">
+      <section id="content1" class="welcome">
+         <h2 class="tit-huge">&lt;welcome&gt;</h2>
+         <div class="welcome__box">
+          <p class="welcome__tit">
+            &lt;b&gt;<span class="font-poppins">Hello</span>&lt;/b&gt;<br />
+            <span class="font-poppins">I'm Yeongjin.</span>
+          </p>
+          <span class="welcome__typing"></span>
+          <p class="welcome__text">
+            Welcome to my personal portfolio website. On this site, you can see a brief introduction to me, skills, and work created with blood and sweat.
+            Also, you can choose between normal and dark mode depending on your preference.
+            First, download the functional definition and get started with the portfolio!
+          </p>
+          <a href="download/function_pdf.pdf" download="function_pdf" title="UI/UX 기능정의서 새 창 열기" class="btn-square">Download PDF</a>
+         </div>
+         <!-- // Welcome Box -->
+         <div class="welcome__shape">배경 사각형 도형</div>
+         <picture class="welcome__pic">
+           <source srcset="images/img_welcome.jpg" media="all and (min-width:63.938rem)">
+           <source srcset="images/img_welcome_tablet.jpg" media="all and (min-width:47.938rem)">
+           <img src="images/img_welcome_mobile.jpg" alt="노트북으로 코딩하고 있는 사진" />
+         </picture>
+      </section>
+      <!-- // Welcome Section -->
+
+      <section id="content2" class="about">
+        <h2 class="tit-huge">&lt;about me&gt;</h2>
+        <div class="about__shape">배경 사각형 도형</div>
+        <div class="about__wrap">
+          <picture class="about__pic">
+            <source srcset="images/img_about.jpg" media="all and (min-width:63.938rem)">
+            <source srcset="images/img_about_tablet.jpg" media="all and (min-width:47.938rem)">
+            <img src="images/img_about_mobile.jpg" alt="카페에서 테이블에 앉아 노트북을 하고 있는 사진" />
+          </picture>
+          <div class="about__cont">
+            <h3>Kim Yeongjin</h3>
+            <strong>
+              I <span class="color-point">don't settle</span> for the present, I <span class="color-point">record</span> and try to <span class="color-point">develop</span>.
+            </strong>
+            <p class="about__text">
+              웹표준 및 웹 접근성을 준수하여 전체 레이아웃을 설계하여 실전에서 바로 생산성을 낼 수 있는 가성비 좋고, 기본기가 탄탄한 웹 퍼블리셔 김영진입니다.
+              저의 가장 큰 강점은 현재에 안주하지 않고, 발전하기 위해 끊임없이 노력하고 기록하는 것을 즐긴다는 점 입니다. 이를 실천하기 위해서 웹을 다시 시작한 순간부터 매일 TIL을 작성해  왔으며, 빠르게 바뀌고 진화하는 웹 프로그래밍 시장에서 뒤쳐지지 않도록 새로운 기술 트렌드에 관심을 갖고, 하나씩 학습해 나가고 있습니다. 
+            </p>
+            <ul class="about__history">
+              <li>
+                <h4>2018</h4>
+                <p>Web Publisher in Pubple</p>
+                <span>Oct 2017 - Dec 2018 / 퍼블리싱팀 주임</span>
+              </li>
+              <li>
+                <h4>2021</h4>
+                <p>UI/UX Design &amp; Front-end in Ezen</p>
+                <span>Jun 2021- Nov 2021 수료</span>
+              </li>
+            </ul>
+            <div class="about__license">
+              <h4>License</h4>
+              <p>웹 디자인 기능사 / GTQ 1급 / 전산 응용 기계제도 기능사 / MOS Master / 자동차 운전면허</p>
+            </div>
+            <div class="about__more">
+              <h4>About More</h4>
+              <ul class="about__sns">
+                <li><a href="https://velog.io/@inusneo" target="_blank" title="Yeongjin's Velog 새 창 바로가기" class="btn-round btn-round--velog">Yeongjin's Velog</a></li>
+                <li><a href="https://www.notion.so/inusneo/React-js-0b9a9ff0ec9440219633e4202dbc35d7" target="_blank" title="Yeongjin's Notion 새 창 바로가기" class="btn-round btn-round--notion">Yeongjin's Notion</a></li>
+                <li><a href="https://github.com/inusneo?tab=repositories" target="_blank" title="Yeongjin's Github 새 창 바로가기" class="btn-round btn-round--github">Yeongjin's Github</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // About Section -->
+
+      <section id="content3" class="skills">
+        <h2 class="tit-huge">&lt;skills&gt;</h2>
+        <div class="skills__wrap">
+          <ul class="skills__lang">
+            <li>
+              <dl class="skills__box">
+                <dt>HTML5</dt>
+                <dd>
+                  웹표준과 웹접근성을 준수하여 표준 가이드 라인에 따라 시멘틱 태그를 사용하여 크로스 브라우징이 가능한 전체 레이아웃을 설계합니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="skills__box">
+                <dt>CSS3</dt>
+                <dd>
+                  IE지원을 고려하는 크로스브라우징을 위해 안정적인 CSS속성을 사용할 수 있고, 다양한 애니메이션과 인터렉션 효과를 구현할 수 있습니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="skills__box">
+                <dt>Javascript</dt>
+                <dd>
+                  자바스크립트 ES6 문법의 기본 개념을 이해하고 조건문, 반복문, 내장 메서드 등을 활용하여 함수를 만들어 사용할 수 있습니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="skills__box">
+                <dt>SCSS</dt>
+                <dd>
+                  CSS보다 가독성과 재사용성이 뛰어난 SCSS의 기본 문법을 이해하고 활용하여 스타일 시트를 보기 편하고 유지보수가 쉽도록 관리합니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="skills__box">
+                <dt>React.js</dt>
+                <dd>
+                  JSX문법의 기초를 이해하고 사용할 수 있으며, 함수형 컴포넌트와 Hook을 활용하여 기본적인 문서 구조 설계가 가능합니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="skills__box">
+                <dt>jQuery</dt>
+                <dd>
+                  순수 제이쿼리만을 이용하여 웹 퍼블리싱에 반드시 필요한 인터렉션 기능을 구현할 수 있고, 다양한 플러그인을 추가적으로 활용할 수 있습니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="skills__container">
+          <div class="skills__tools skills__swiper">
+            <h3>Available Tools</h3>
+            <ul class="skills__list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>PhotoShop</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>illustrator</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>Adobe XD</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>VS Code</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>Figma</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>Slack</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="skills__cont">
+                  <p>FileZilla</p>
+                </div>
+              </li>
+            </ul>
+            <a href="#" id="skillsPrev" class="btn-circle btn-circle--prev">이전</a>
+            <a href="#" id="skillsNext" class="btn-circle btn-circle--next">다음</a>
+          </div>
+          <!-- // Skills tools -->
+        </div>
+        <!-- // Skills Container -->
+      </section>
+      <!-- // Skills Section -->
+
+      <section id="content4" class="portfolio">
+        <h2 class="tit-huge">&lt;portfolio&gt;</h2>
+        <div class="portfolio__container">
+          <div class="portfolio__swiper">
+            <ul class="portfolio__list swiper-wrapper">
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Responsive Web Site</h3>
+                  <div class="portfolio__txt">
+                    <p>
+                      <span>Subject</span> 웹표준/웹접근성을 준수한 반응형 웹사이트 구현
+                    </p>
+                    <p>
+                      <span>Used Skills</span> HTML5 / CSS3 / jQuery
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> DeskTop / Tablet / Mobile
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_cjone_mockup.jpg" alt="CJONE 웹사이트 데스크탑, 노트북, 모바일 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/01_cjone/index.html" target="_blank" title="CJONE 반응형 웹사이트 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Animation #Banner</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 1 -->
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Web Site Publishing</h3>
+                  <div class="portfolio__txt">
+                    <p>`
+                      <span>Subject</span> 웹표준/웹접근성을 준수한 기업 웹사이트 구현
+                    </p>
+                    <p>
+                      <span>Used Skills</span> HTML5 / CSS3 / jQuery & Library
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> DeskTop 1920 X 1080
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_locknlock_mockup.jpg" alt="락앤락 기업사이트 데스크탑, 노트북 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/02_locknlock/index.html" target="_blank" title="락앤락 기업사이트 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Include #Swiper</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 2 -->
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Web Site Publishing</h3>
+                  <div class="portfolio__txt">
+                    <p>
+                      <span>Subject</span> 웹표준을 준수한 쉐보레 카마로 웹사이트 리뉴얼
+                    </p>
+                    <p>
+                      <span>Used Skills</span> HTML5 / CSS3 / Javascript
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> DeskTop 1920 X 1080
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_chevrolet_mockup.jpg" alt="쉐보레 카마로 웹사이트 데스크탑 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/03_neo/index.html" target="_blank" title="쉐보레 카마로 리뉴얼 웹사이트 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Include #Vanilla JS</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 3 -->
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Web Site Publishing</h3>
+                  <div class="portfolio__txt">
+                    <p>
+                      <span>Subject</span> 웹표준/웹접근성을 준수한 기업 웹사이트 구현
+                    </p>
+                    <p>
+                      <span>Used Skills</span> HTML5 / CSS3 / Javascript
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> DeskTop 1920 X 1080
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_samsung_mockup.jpg" alt="삼성전기 웹사이트 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/04_samsung/index.html" target="_blank" title="삼성전기 웹사이트 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Include #Vanilla JS</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 4 -->
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Landing Page Publishing</h3>
+                  <div class="portfolio__txt">
+                    <p>
+                      <span>Subject</span> 모바일앱 랜딩페이지 제작
+                    </p>
+                    <p>
+                      <span>Used Skills</span> HTML5 / CSS3 / jQuery
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> Full 1920 X 1080
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_kink_mockup.jpg" alt="Kink 랜딩페이지 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/05_kink/index.html" target="_blank" title="Kink 랜딩페이지 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Scroll #Animation</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 5 -->
+              <li class="portfolio__box swiper-slide">
+                <div class="portfolio__desc">
+                  <h3>Responsive Design</h3>
+                  <div class="portfolio__txt">
+                    <p>
+                      <span>Subject</span> 반응형 웹사이트 디자인
+                    </p>
+                    <p>
+                      <span>Used Skills</span> Design Only
+                    </p>
+                    <p>
+                      <span>Suitable Device</span> DeskTop / Tablet / Mobile
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <figure>
+                    <img src="images/img_rolex_mockup.jpg" alt="Rolex 반응형 디자인 목업" />
+                  </figure>
+                  <a href="portfolio/works_website/06_rolex/index.html" target="_blank" title="Rolex 반응형 디자인 페이지 새 창 바로가기" class="portfolio__details">
+                    <p class="portfolio__hash">#Responsive #Figma</p>
+                    <div class="btn-square btn-square--white">Read More</div>
+                  </a>
+                </div>
+              </li>
+              <!-- // Slide 6 -->
+            </ul>
+            <a href="#" id="portfolioPrev" class="btn-circle btn-circle--prev"></a>
+            <a href="#" id="portfolioNext" class="btn-circle btn-circle--next"></a>
+          </div>
+          <div id="portfolioPage" class="portfolio__pagination"></div>
+        </div>
+        <!-- // Portfolio Container -->
+      </section>
+      <!-- // Portfolio Section -->
+
+      <section id="content5" class="practical">
+        <h2 class="tit-huge">&lt;practical&gt;</h2>
+        <div class="tab">
+          <h3 class="blind">실전 퍼블리싱 포트폴리오입니다.</h3>
+          <ul class="tab__container">
+            <li class="tab__list">
+              <a href="#" class="tab__menu tab__menu--hov active" data-tab="tab1">Hover FX</a>
+              <div id="tab1" class="tab__wrap target">
+                <ul class="tab__content">
+                  <li class="item item1">
+                    <figure>
+                      <img src="images/img_practical_spread.png" alt="spread 카드 hover 효과 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/hover_effects/01_img_spread/index.html" target="_blank" class="item__details item__details--two">
+                      <h4>Images Spread</h4>
+                      <p>#CSS3 #Transform #Transition</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item2">
+                    <figure>
+                      <img src="images/img_practical_accordion.jpg" alt="아코디언 hover 효과 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/hover_effects/02_accordion/index.html" target="_blank" class="item__details">
+                      <h4>Accordion</h4>
+                      <p>#CSS3 #Transition</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item3">
+                    <figure>
+                      <img src="images/img_practical_ripple.jpg" alt="ripple 버튼 hover 효과 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/hover_effects/03_btn_ripple/index.html" target="_blank" class="item__details">
+                      <h4>Ripple Button</h4>
+                      <p>#Javascript #Mousemove</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item4">
+                    <figure>
+                      <img src="images/img_practical_window.jpg" alt="창문 모양 변형 hover 효과 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/hover_effects/04_window/index.html" target="_blank" class="item__details">
+                      <h4>Window</h4>
+                      <p>#CSS3 #Grid</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item5">
+                    <figure>
+                      <img src="images/img_practical_card.png" alt="카드 모양 tilt hover 효과 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/hover_effects/05_card/index.html" target="_blank" class="item__details">
+                      <h4>Card Tilt</h4>
+                      <p>#CSS3 #Tilt.js</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- // Hover FX -->
+            <li class="tab__list">
+              <a href="#" class="tab__menu tab__menu--ani" data-tab="tab2">Animation</a>
+              <div id="tab2" class="tab__wrap">
+                <ul class="tab__content">
+                  <li class="item item1">
+                    <figure>
+                      <img src="images/img_animation_circle.png" alt="원 모양으로 회전하는 Animation 예제 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/animation/01_loading_circle/index.html" target="_blank" class="item__details item__details--one">
+                      <h4>Loading Circle</h4>
+                      <p>#CSS3 #Reflect #Rotate</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item2">
+                    <figure>
+                      <img src="images/img_animation_rotate.png" alt="계속 회전하는 콘텐츠 Animation 예제 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/animation/02_rotate_shape/index.html" target="_blank" class="item__details">
+                      <h4>Rotate Shape</h4>
+                      <p>#CSS3 #Rotate</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item3">
+                    <figure>
+                      <img src="images/img_animation_apeach.png" alt="졸고 있는 어피치 Animation 예제 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/animation/04_apeach/apeach.html" target="_blank" class="item__details">
+                      <h4>Apeach</h4>
+                      <p>#CSS3 #Multi Animation</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item4">
+                    <figure>
+                      <img src="images/img_animation_progress.png" alt="스킬 progressbar Animation 예제 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/animation/03_skill_bar/index.html" target="_blank" class="item__details">
+                      <h4>Progress Bars</h4>
+                      <p>#CSS3 #Forwards</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item5">
+                    <figure>
+                      <img src="images/img_animation_jelly.png" alt="jelly 괴물 Animation 예제 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/animation/05_jelly/jelly.html" target="_blank" class="item__details item__details--one">
+                      <h4>Jelly Monster</h4>
+                      <p>#CSS3 #Multi Animation</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- // Animation -->
+            <li class="tab__list">
+              <a href="#" class="tab__menu tab__menu--tab" data-tab="tab3">Tab &amp; Slide FX</a>
+              <div id="tab3" class="tab__wrap">
+                <ul class="tab__content">
+                  <li class="item item1">
+                    <figure>
+                      <img src="images/img_tab_hor.png" alt="CSS로 구현한 탭메뉴 프로토타입 메인 이미지">
+                    </figure>
+                    <a href="portfolio/works_practical/tab_menu/01_transition/index.html" target="_blank" class="item__details">
+                      <h4>CSS Tab Menu</h4>
+                      <p>#CSS3 #Indicator</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item2">
+                    <figure>
+                      <img src="images/img_tab_js.jpg" alt="바닐라 JS를 사용한 탭메뉴 프로토타입 메인 이미지">
+                    </figure>
+                    <a href="portfolio/works_practical/tab_menu/02_vanillaJs/index.html" target="_blank" class="item__details item__details--one">
+                      <h4>JS Tab Menu</h4>
+                      <p>#Javascript #Data #Target</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item3">
+                    <figure>
+                      <img src="images/img_tab_ver.png" alt="바닐라 JS를 사용한 세로형 탭메뉴 프로토타입 메인 이미지">
+                    </figure>
+                    <a href="portfolio/works_practical/tab_menu/03_vertical/index.html" target="_blank" class="item__details">
+                      <h4>Vertical Tab Menu</h4>
+                      <p>#Javascript #CSS3</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item4">
+                    <figure>
+                      <img src="images/img_slide_hor.jpg" alt="가로형 슬라이드 배너 프로토타입 메인 이미지">
+                    </figure>
+                    <a href="portfolio/works_practical/slide_animation/01_slide_horizon/index.html" target="_blank" class="item__details item__details--one">
+                      <h4>Horizontal Slide</h4>
+                      <p>#CSS3 #Input</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item5">
+                    <figure>
+                      <img src="images/img_slide_ver.png" alt="세로형 슬라이드 배너 프로토타입 메인 이미지">
+                    </figure>
+                    <a href="portfolio/works_practical/slide_animation/02_slide_vertical/index.html" target="_blank" class="item__details">
+                      <h4>Vertical Slide</h4>
+                      <p>#CSS3 #Input</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- // Tab & Slide FX -->
+            <li class="tab__list">
+              <a href="#" class="tab__menu tab__menu--navi" data-tab="tab4">Nav & Form</a>
+              <div id="tab4" class="tab__wrap">
+                <ul class="tab__content">
+                  <li class="item item1">
+                    <figure>
+                      <img src="images/img_nav_curve.png" alt="가상요소를 이용한 곡선 스타일 내비게이션 바 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/navigation/03_curve/index.html" target="_blank" class="item__details item__details--one">
+                      <h4>Curve</h4>
+                      <p>#CSS3 #Pseudo Element</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item2">
+                    <figure>
+                      <img src="images/img_nav_neumorphism.png" alt="뉴모피즘을 활용하여 제작한 내비게이션 바 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/navigation/02_neumorphism/index.html" target="_blank" class="item__details">
+                      <h4>Neumorphism</h4>
+                      <p>#CSS3 #Shadow</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item3">
+                    <figure>
+                      <img src="images/img_nav_dropdown.png" alt="드롭다운 Drawer 내비게이션 바 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/navigation/01_dropdown/index.html" target="_blank" class="item__details">
+                      <h4>Dropdown</h4>
+                      <p>#Javascript #Drawer</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item4">
+                    <figure>
+                      <img src="images/img_form.png" alt="회원 가입 양식 폼 메인 이미지" />
+                    </figure>
+                    <a href="portfolio/works_practical/form/01_registration/index.html" target="_blank" class="item__details item__details--one">
+                      <h4>Join Form</h4>
+                      <p>#CSS3 #Responsive</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                  <li class="item item5">
+                    <figure>
+                      <img src="images/img_coming.jpg" alt="COMING SOON" />
+                    </figure>
+                    <a href="javascript:void(0)" class="item__details">
+                      <h4>Coming Soon...</h4>
+                      <p>#CSS3 #Input</p>
+                      <div class="btn-square btn-square--white">Read More</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- // Nav & Form -->
+          </ul>
+        </div>
+      </section>
+      <!-- // Practical Section -->
+
+      <section id="content6" class="records">
+        <h2 class="tit-huge">&lt;records&gt;</h2>
+        <ul class="records__list">
+          <li>
+            <a href="https://www.notion.so/SASS-SCSS-48d45c41bbf14533a40e37da86a13d31" target="_blank" title="SCSS(SASS) BASIC! Notion 포스트로 새 창 바로가기">
+              <figure class="records__img">
+                <img src="images/img_records_sass.png" alt="Sass Wonderful SCSS!" />
+              </figure>
+              <div class="records__info">
+                <em>29, SEP 2021</em>
+                <strong>SCSS(SASS) BASIC!</strong>
+                <p>
+                  변수, 연산자, 함수 등을 사용하여 CSS를 효율적으로 작성할 수 있도록 도와주는 SCSS를 알아보자!
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.notion.so/React-js-0b9a9ff0ec9440219633e4202dbc35d7" target="_blank" title="React.js 기초 정리 Notion 포스트로 새 창 바로가기">
+              <figure class="records__img">
+                <img src="images/img_records_react.png" alt="Edit src/App.js and save to reload Learn React" />
+              </figure>
+              <div class="records__info">
+                <em>16, AUG 2021</em>
+                <strong>React.js 기초 정리</strong>
+                <p>
+                  react-create-app으로 기초적인 앱을 만들고, 내가 만든 프로젝트를 Github에 배포하는 과정까지 담아봤습니다.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://velog.io/@inusneo/CSS3-text-shadow-box-shadow-rgba-gradient%ED%95%99%EC%8A%B5-27%EC%9D%BC%EC%B0%A8-TIL" target="_blank" title="Velog CSS3 shadow 파헤치기 포스트로 새 창 바로가기">
+              <figure class="records__img">
+                <img src="images/img_records_flame.jpg" alt="FLAME SHADOW" />
+              </figure>
+              <div class="records__info">
+                <em>15, OCT 2021</em>
+                <strong>CSS3 Shadow 파헤치기</strong>
+                <p>
+                  CSS3부터는 Text와 Box에 Shadow 속성으로 그림자 효과를 줄 수 있고, 중첩도 가능하다...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://velog.io/@inusneo/%EA%BC%AC%EB%A6%AC%EC%9E%AC%EA%B7%80%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC" target="_blank" title="Velog 꼬리재귀에 대하여 포스트로 새 창 바로가기">
+              <figure class="records__img">
+                <img src="images/img_records_js.png" alt="JS" />
+              </figure>
+              <div class="records__info">
+                <em>09, JUL 2021</em>
+                <strong>JS 꼬리재귀에 대하여</strong>
+                <p>
+                  재귀함수의 실행 결과가 연산에 사용되지 않고 바로 반환되게 함으로써 이전 함수의 상태를...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- // Records Section -->
+
+      <section class="epilogue">
+        <h2 class="tit-huge">&lt;epilogue&gt;</h2>
+        <div class="epilogue__shape">배경 사각형 도형</div>
+        <div class="epilogue__content item01">
+          <h3><span class="color-point">Thank you</span><br />for watching</h3>
+          <p class="epilogue__txt">
+            지금까지 포트폴리오를 봐주셔서 감사합니다.<br />
+            하나의 프로젝트를 제작할 때마다 기획, 디자인, 개발 파트 각각 입장에 대한 고충을 간접적으로 경험할 수 있었고, 이를 통해 좋은 결과물이 나오기 위해서는 각 파트별로 이루어지는 커뮤니케이션이 너무나도 중요하다는 것을 새삼 깨닫게 되었습니다.<br />
+            그러므로 앞으로는 팀원들과 이해와 존중을 바탕으로 소통하고, 배려하는 자세를 갖추므로, 함께 일하기 좋은 퍼블리셔가 되어 퀄리티 높은 결과물을 이끌어 낼 수 있는 인재로 거듭나겠습니다.
+          </p>
+          <div class="epilogue__foot">
+            <a href="https://github.com/inusneo?tab=repositories" target="_blank" title="Yeongjin's Github 새 창 바로가기">Github</a>
+            <a href="https://velog.io/@inusneo" target="_blank" title="Yeongjin's Velog 새 창 바로가기">Velog</a>
+            <span>&copy; 2021 Yeongjin.</span>
+          </div>
+        </div>
+        <picture class="epilogue__img item02">
+          <source srcset="images/img_epilogue_pc.jpg" media="all and (min-width:63.938rem)">
+          <source srcset="images/img_epilogue_tablet.jpg" media="all and (min-width:47.938rem)">
+          <img src="images/img_epilogue.jpg" alt="카페에서 노트북으로 작업 중인 나의 모습" />
+        </picture>
+      </section>
+      <!-- // Epilogue Section -->
+    </div>
+    <!-- // inner -->
+  </main>
+  <!-- // Main -->
+
+  <!-- Scroll Top Button -->
+  <aside class="btn-top">
+    <button type="button" id="btnScrTop" class="btn-circle btn-circle--top"></button>
+  </aside>
+  <!--// Scroll Top Button -->
+</body>
+</html>

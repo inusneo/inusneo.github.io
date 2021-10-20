@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration &lt; Prototype | Yeongjin's portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1 class="main-title">Responsive Registration Form</h1>
+  <div class="container">
+    <h2 class="title">Registration</h2>
+    <form action="/" method="POST">
+      <fieldset>
+        <legend>Membership Form</legend>
+        <ol class="user">
+          <li class="user__box">
+            <label class="user__tit" for="userFullName">Full Name</label>
+            <input type="text" id="userFullName" placeholder="Enter your name" required />
+          </li>
+          <li class="user__box">
+            <label class="user__tit" for="userName">Username</label>
+            <input type="text" id="userName" placeholder="Enter your username" required />
+          </li>
+          <li class="user__box">
+            <label class="user__tit" for="userEmail">Email</label>
+            <input type="text" id="userEmail" placeholder="Enter your email" required />
+          </li>
+          <li class="user__box">
+            <label class="user__tit" for="userPhone">Phone Number</label>
+            <input type="text" id="userPhone" placeholder="Enter your number" required />
+          </li>
+          <li class="user__box">
+            <label class="user__tit" for="userPw">password</label>
+            <input type="text" id="userPw" placeholder="Enter your password" required />
+          </li>
+          <li class="user__box">
+            <label class="user__tit" for="userConfirm">Confirm Password</label>
+            <input type="text" id="userConfirm" placeholder="Confirm your password" required />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Select Gender</legend>
+        <div class="gender">
+          <span class="gender__title">Gender</span>
+          <div class="gender__select">
+            <label for="male">
+              <input type="radio" id="male" name="gender" />
+              <span class="gender__subTitle">Male</span>
+            </label>
+            <label for="female">
+              <input type="radio" id="female" name="gender" />
+              <span class="gender__subTitle">Female</span>
+            </label>
+            <label for="prefer">
+              <input type="radio" id="prefer" name="gender" />
+              <span class="gender__subTitle">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <input type="submit" name="subBtn" value="Register" />
+    </form>
+  </div>
+</body>
+</html>

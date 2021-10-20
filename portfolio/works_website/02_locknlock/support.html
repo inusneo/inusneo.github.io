@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지원서 작성 - 채용모집 | 락앤락</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/import.css">
+  <link rel="stylesheet" type="text/css" href="css/support.css">
+  <!-- script -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/support.js"></script>
+</head>
+<body>
+  <!-- Skip Navi -->
+  <div id="skipNavi"><a href="#container">본문 바로가기</a></div>
+  <!-- //Skip Navi -->
+
+  <!-- wrap -->
+  <div id="wrap" class="wrap">
+    <!-- header -->
+    <header id="header" class="header"></header>
+    <!-- //header -->
+    
+    <!-- search all-->
+    <div class="srch"></div>
+    <!-- //search all -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="support">
+        <h2>채용공고</h2>
+        <form action="/" method="POST">
+          <fieldset>
+            <legend class="blind">채용지원 약관동의 및 본인 식별정보</legend>
+            <div class="agree">
+              <div class="title-box">
+                <h3>약관동의</h3>
+                <span class="check-wrap">
+                  <input type="checkbox" id="agreeAll" />
+                  <label for="agreeAll"><span>모두 동의</span></label>
+                </span>
+              </div>
+              <ul class="agree__list">
+                <li>
+                  <a href="#" class="title-box">
+                    <div class="check-wrap">
+                      <input type="checkbox" id="agreeOne" />
+                      <label for="agreeOne">개인정보 수집 및 이용 동의 (필수)</label>
+                    </div>
+                  </a>
+                  <span class="material-icons agree__expand">expand_more</span>
+                  <small class="agree__warning">필수 약관에 동의하셔야 제출이 가능합니다.</small>
+                  <div class="agree__cont">
+                    <h4>■ 개인정보의 처리 목적</h4>
+                    <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                    <ul>
+                      <li>- 입사지원 및 선발전형, 합격여부 확인, 자격증빙 확인 등을 위한 정보 수집</li>
+                    </ul>
+                    <h4>■ 개인정보 수집항목 및 수집방법</h4>
+                    <p>회사는 고객문의에 활용하기 위해 수집항목과 수집방법은 아래와 같습니다.</p>
+                    <ol class="agree__cont__dp1">
+                      <li>수집항목
+                        <ol class="agree__cont__dp2">
+                          <li>필수항목 : 성명, 사진, 최종학력, 이메일, 연락처(전화번호, 휴대폰), 주소, 병역 정보, 학력 정보, 어학능력 정보, , 생년월일, 성별</li>
+                          <li>선택항목 : 보훈 정보, 경력/자격 정보, 공모전 수상경력, 해외경험, 동아리활동 정보, 사회공헌활동 정보, 논문 정보</li>
+                        </ol>
+                      </li>
+                      <li>수집방법 : 홈페이지</li>
+                    </ol>
+                    <h4>■ 개인정보의 처리 및 보유기간</h4>
+                    <p>고객문의에 활용하기 위해 수집된 개인정보의 처리 및 보유기간은 아래와 같습니다.</p>
+                    <ul>
+                      <li>- 보존항목 : 입사지원서 및 각종 증빙서류</li>
+                      <li>- 보존기간 : 3년</li>
+                      <li>- 보존이유 : 채용이력 관리 및 상시채용 실시를 위한 인적자원관리(인재DB)</li>
+                    </ul>
+                    <p>
+                      다만, 관계법령의 규정에 의하여 보존할 필요성이 있는 정보 및 보유기간은 아래와 같습니다.
+                    </p>
+                    <ul>
+                      <li>- 상업장부와 영업에 관한 중요서류에 포함된 정보 : 10년(상법)</li>
+                      <li>- 거래내역 및 증빙서류와 관련된 정보 : 5년(국세기본법, 법인세법)</li>
+                      <li>- 표시광고에 관한 기록 : 6개월(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 소비자 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 기타 개별적으로 이용자의 동의를 받은 경우 : 동의 받은 기간</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="title-box">
+                    <div class="check-wrap">
+                      <input type="checkbox" id="agreeTwo" />
+                      <label for="agreeTwo">민감정보 수집 및 이용 동의 (필수)</label>
+                    </div>
+                  </a>
+                  <span class="material-icons agree__expand">expand_more</span>
+                  <small class="agree__warning">필수 약관에 동의하셔야 제출이 가능합니다.</small>
+                  <div class="agree__cont">
+                    <h4>■ 개인정보의 처리 목적</h4>
+                    <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                    <ul>
+                      <li>- 입사지원 및 선발전형, 합격여부 확인, 자격증빙 확인 등을 위한 정보 수집</li>
+                    </ul>
+                    <h4>■ 개인정보 수집항목 및 수집방법</h4>
+                    <p>회사는 고객문의에 활용하기 위해 수집항목과 수집방법은 아래와 같습니다.</p>
+                    <ol class="agree__cont__dp1">
+                      <li>수집항목
+                        <ol class="agree__cont__dp2">
+                          <li>필수항목 : 성명, 사진, 최종학력, 이메일, 연락처(전화번호, 휴대폰), 주소, 병역 정보, 학력 정보, 어학능력 정보, , 생년월일, 성별</li>
+                          <li>선택항목 : 보훈 정보, 경력/자격 정보, 공모전 수상경력, 해외경험, 동아리활동 정보, 사회공헌활동 정보, 논문 정보</li>
+                        </ol>
+                      </li>
+                      <li>수집방법 : 홈페이지</li>
+                    </ol>
+                    <h4>■ 개인정보의 처리 및 보유기간</h4>
+                    <p>고객문의에 활용하기 위해 수집된 개인정보의 처리 및 보유기간은 아래와 같습니다.</p>
+                    <ul>
+                      <li>- 보존항목 : 입사지원서 및 각종 증빙서류</li>
+                      <li>- 보존기간 : 3년</li>
+                      <li>- 보존이유 : 채용이력 관리 및 상시채용 실시를 위한 인적자원관리(인재DB)</li>
+                    </ul>
+                    <p>
+                      다만, 관계법령의 규정에 의하여 보존할 필요성이 있는 정보 및 보유기간은 아래와 같습니다.
+                    </p>
+                    <ul>
+                      <li>- 상업장부와 영업에 관한 중요서류에 포함된 정보 : 10년(상법)</li>
+                      <li>- 거래내역 및 증빙서류와 관련된 정보 : 5년(국세기본법, 법인세법)</li>
+                      <li>- 표시광고에 관한 기록 : 6개월(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 소비자 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 기타 개별적으로 이용자의 동의를 받은 경우 : 동의 받은 기간</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="title-box">
+                    <div class="check-wrap">
+                      <input type="checkbox" id="agreeThree" />
+                      <label for="agreeThree">지원 전 유의사항 동의 (필수)</label>
+                    </div>
+                  </a>
+                  <span class="material-icons agree__expand">expand_more</span>
+                  <small class="agree__warning">필수 약관에 동의하셔야 제출이 가능합니다.</small>
+                  <div class="agree__cont">
+                    <h4>■ 개인정보의 처리 목적</h4>
+                    <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                    <ul>
+                      <li>- 입사지원 및 선발전형, 합격여부 확인, 자격증빙 확인 등을 위한 정보 수집</li>
+                    </ul>
+                    <h4>■ 개인정보 수집항목 및 수집방법</h4>
+                    <p>회사는 고객문의에 활용하기 위해 수집항목과 수집방법은 아래와 같습니다.</p>
+                    <ol class="agree__cont__dp1">
+                      <li>수집항목
+                        <ol class="agree__cont__dp2">
+                          <li>필수항목 : 성명, 사진, 최종학력, 이메일, 연락처(전화번호, 휴대폰), 주소, 병역 정보, 학력 정보, 어학능력 정보, , 생년월일, 성별</li>
+                          <li>선택항목 : 보훈 정보, 경력/자격 정보, 공모전 수상경력, 해외경험, 동아리활동 정보, 사회공헌활동 정보, 논문 정보</li>
+                        </ol>
+                      </li>
+                      <li>수집방법 : 홈페이지</li>
+                    </ol>
+                    <h4>■ 개인정보의 처리 및 보유기간</h4>
+                    <p>고객문의에 활용하기 위해 수집된 개인정보의 처리 및 보유기간은 아래와 같습니다.</p>
+                    <ul>
+                      <li>- 보존항목 : 입사지원서 및 각종 증빙서류</li>
+                      <li>- 보존기간 : 3년</li>
+                      <li>- 보존이유 : 채용이력 관리 및 상시채용 실시를 위한 인적자원관리(인재DB)</li>
+                    </ul>
+                    <p>
+                      다만, 관계법령의 규정에 의하여 보존할 필요성이 있는 정보 및 보유기간은 아래와 같습니다.
+                    </p>
+                    <ul>
+                      <li>- 상업장부와 영업에 관한 중요서류에 포함된 정보 : 10년(상법)</li>
+                      <li>- 거래내역 및 증빙서류와 관련된 정보 : 5년(국세기본법, 법인세법)</li>
+                      <li>- 표시광고에 관한 기록 : 6개월(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 소비자 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                      <li>- 기타 개별적으로 이용자의 동의를 받은 경우 : 동의 받은 기간</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //agree -->
+            <div class="identity">
+              <div class="title-box">
+                <h3>입사지원 본인 식별정보</h3>
+              </div>
+              <ul class="identity__box">
+                <li class="identity__nation">
+                  <input type="radio" id="korean" name="nation" />
+                  <label for="korean">내국인</label>
+                  <input type="radio" id="foreigner" name="nation" />
+                  <label for="foreigner">외국인</label>
+                </li>
+                <li class="identity__person">
+                  <input type="text" id="name" placeholder="이름" title="이름" />
+                  <input type="text" id="birth" placeholder="생년월일 YYYY-MM--DD" title="생년월일" />
+                </li>
+                <li class="identity__email">
+                  <input type="email" id="email" placeholder="이메일" title="이메일" />
+                  <button type="button" class="btn-email">인증메일 발송</button>
+                </li>
+                <li class="identity__email">
+                  <input type="text" id="emailCode" placeholder="이메일 인증코드 입력" title="이메일 인증코드 입력란" />
+                  <button type="button" class="btn-email">인증</button>
+                </li>
+                <li class="identity__pass">
+                  <input type="password" id="password" placeholder="비밀번호" title="비밀번호" />
+                  <div class="identity__pass__condition">
+                    <span>숫자 포함 <span class="material-icons">check_circle_outlined</span></span>
+                    <span>특수문자 포함 <span class="material-icons">check_circle_outlined</span></span>
+                    <span>8-15자 이내 <span class="material-icons">check_circle_outlined</span></span>
+                  </div>
+                </li>
+                <li class="identity__pass">
+                  <input type="password" id="passwordConfirm" placeholder="비밀번호 확인" title="비밀번호 확인" />
+                </li>
+              </ul>
+              <p class="identity__info">※ 한 채용공고내 복수지원 시, 본인 식별정보의 비밀번호는 동일해야 전형결과를 확인할 수 있습니다.</p>
+              <ul class="identity__advice">
+                <li>비밀번호는 입사지원서 수정/확인, 전형결과 확인 시 필요합니다.</li>
+                <li>비밀번호 찾기, 변경은 해당 채용공고에 중복 지원한 경우 이전에 사용한 비밀번호를 조회/변경할 수 있습니다.</li>
+              </ul>
+              <div class="identity__import">
+                <p>입사지원 본인 식별정보가 이전과 일치하지 않는 경우, 이전에 작성한 내용을 수정/확인할 수<br /> 없습니다.</p>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <input type="reset" value="취소" title="취소" class="btn-reset" />
+              <input type="submit" value="확인" title="확인" class="btn-submit" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer"></footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+</html>

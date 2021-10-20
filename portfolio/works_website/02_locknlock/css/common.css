@@ -1,0 +1,41 @@
+/* Common */
+
+:root {
+  --default-color: #101820;
+  --white-color: #fff;
+  --dark-grey-color: #54565B;
+  --light-grey-color: #76777B;
+  
+  --large-text: 2.25rem;  /* 36px */
+  --xmideum-text: 1.25rem;  /* 20px */
+  --mideum-text: 1.063rem;  /* 17px */
+  --regular-text: 0.938rem; /* 15px */
+  --small-text: 0.875rem; /* 14px */
+  
+  --visual-title: 4rem; /* 64px */
+  --bg-title: 2.875rem; /* 46px */
+  --title: 4.25rem; /* 68px */
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--white-color);
+  color: var(--default-color);
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+input::-ms-clear {
+  display: none;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+input:focus {
+  outline: none;
+}

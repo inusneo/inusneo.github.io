@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Common */
+
+body, div, span, h2, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(26, 26, 26);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Shape */
+
+.shape-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.shape-box > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3b8d99;
+  border-radius: 40% 60% 65% 35% / 40% 45% 56% 60%;
+}
+.shape-box > span:after {
+  opacity: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 40% 60% 65% 35% / 40% 45% 56% 60%;
+  background: linear-gradient(-45deg, #aa4b6b, #6b6b83, #3b8d99);
+  transition: all 0.5s linear 0s;
+}
+.shape-box > span:nth-of-type(1) {
+  animation: rotateShape 6s linear infinite;
+}
+.shape-box > span:nth-of-type(2) {
+  opacity: 0.8;
+  animation: rotateShapeReverse 6s linear infinite;
+}
+.shape-box > span:nth-of-type(3) {
+  opacity: 0.8;
+  animation: rotateShape 10s linear infinite;
+}
+.shape-box:hover > span {
+  border: none;
+}
+.shape-box:hover > span:after {
+  opacity: 1;
+}
+
+/* Text */
+
+.shape-text {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 70px;
+  color: #3b8d99;
+}
+.shape-text h2 {
+  transition: all 0.3s linear 0s;
+}
+.shape-text p {
+  opacity: 0.5;
+  text-align: justify;
+  word-break: break-all;
+  margin-bottom: 15px;
+  transition: all 0.3s linear 0s;
+}
+.shape-text a {
+  padding: 8px 15px;
+  border: 1px solid #3b8d99;
+  border-radius: 40% 60% 65% 35% / 40% 45% 56% 60%;
+  font-size: 12px;
+  color: #3b8d99;
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+}
+.shape-box:hover .shape-text {
+  color: #fff;
+}
+.shape-box:hover .shape-text p {
+  opacity: 1;
+}
+.shape-box:hover .shape-text a {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.shape-box .shape-text a:hover {
+  border-radius: 60% 40% 35% 65% / 45% 40% 60% 55%;
+}
+
+/* Animation */
+
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateShapeReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

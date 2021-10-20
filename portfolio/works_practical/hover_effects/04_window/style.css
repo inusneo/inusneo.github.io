@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+/* Common */
+body, h2, div, p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #999;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+/* Layout */
+h2 {
+  margin-bottom: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 150px);
+  grid-template-areas: 'item01 item02 item03 item03'
+                       'item04 item05 item03 item03';
+  gap: 10px;
+}
+.container div {
+  background-size: cover;
+  perspective: 700px;
+}
+.item-01 {
+  grid-area: item01;
+  background: url(images/product_01.jpg) no-repeat center;
+}
+.item-02 {
+  grid-area: item02;
+  background: url(images/product_02.jpg) no-repeat center;
+}
+.item-03 {
+  grid-area: item03;
+  background: url(images/product_04.jpg) no-repeat center;
+}
+.item-04 {
+  grid-area: item04;
+  background: url(images/product_03.jpg) no-repeat center;
+}
+.item-05 {
+  grid-area: item05;
+  background: url(images/product_05.jpg) no-repeat center;
+}
+/* Contents */
+p {
+  opacity: 0.3;
+  width: 90%;
+  height: 100%;
+  padding-left: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  line-height: 200%;
+  transition: all 1s ease 0s;
+}
+.tit-best {
+  width: 95%;
+  padding-left: 5%;
+}
+.window:hover p {
+  transform: rotateY(45deg);
+  transform-origin: left center;
+}
+/*
+div:not(:first-child):hover p {
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}*/

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown sidebar &lt; Navigation | Yeongjin's portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- google web font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar close">
+    <div class="sidebar__logo">
+      <i class="bx bxs-bolt-circle"></i>
+      <span class="sidebar__logo-name">Neo</span>
+    </div>
+    <ul class="sidebar__nav">
+      <li>
+        <a href="#">
+          <i class="bx bxs-home"></i>
+          <span class="sidebar__link">Home</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="sidebar__wrap">
+          <a href="#">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="sidebar__link">Category</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sidebar__sub">
+          <li><a class="sidebar__link" href="#">Category</a></li>
+          <li><a href="#">Web Publishing</a></li>
+          <li><a href="#">Front-End</a></li>
+          <li><a href="#">Back-End</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-message-rounded-dots"></i>
+          <span class="sidebar__link">Messages</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Messages</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-book"></i>
+          <span class="sidebar__link">Documents</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Documents</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-bar-chart-alt-2"></i>
+          <span class="sidebar__link">Chart</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="sidebar__wrap">
+          <a href="#">
+            <i class="bx bxs-paint-roll"></i>
+            <span class="sidebar__link">Language</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sidebar__sub">
+          <li><a class="sidebar__link" href="#">Language</a></li>
+          <li><a href="#">HTML5</a></li>
+          <li><a href="#">CSS3</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">REACT</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-code-alt"></i>
+          <span class="sidebar__link">Code</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Code</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="sidebar__wrap">
+          <a href="#">
+            <i class="bx bx-git-branch"></i>
+            <span class="sidebar__link">Share</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sidebar__sub">
+          <li><a class="sidebar__link" href="#">Share</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Velog</a></li>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-help-circle"></i>
+          <span class="sidebar__link">Help</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Help</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-cog"></i>
+          <span class="sidebar__link">Setting</span>
+        </a>
+        <ul class="sidebar__sub blank">
+          <li><a class="sidebar__link" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile">
+          <div class="profile__content">
+            <img src="images/men.jpg" alt="american men image" />
+          </div>
+          <div class="profile__info">
+            <p class="profile__name">Pole Kevine</p>
+            <p class="profile__job">Web Publisher</p>
+          </div>
+          <i class="bx bx-log-out-circle"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- //sidebar -->
+  <section class="hamberger">
+    <div class="hamberger__content">
+      <i class="bx bx-menu"></i>
+      <span class="hamberger__txt">Drop Down Side</span>
+    </div>
+  </section>
+  
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (let i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=> {
+      let arrowParent = e.target.parentElement.parentElement;
+      arrowParent.classList.toggle("openMenu");
+      });
+    }
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+</body>
+</html>

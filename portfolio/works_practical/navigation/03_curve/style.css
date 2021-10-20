@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Common */
+
+body, nav, ul, li, h1, h2, h3, p, span, a, i, span, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  background: #fff;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style */
+
+.gnb {
+  overflow-x: hidden;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 80px;
+  border-radius: 10px;
+  border-left: 5px solid #4d5bf9;
+  background: #4d5bf9;
+  transition: width .5s;
+}
+.gnb.active {
+  width: 300px;
+}
+.gnb ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 0 0 5px;
+}
+.gnb li {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.gnb li.active {
+  background: #fff;
+}
+.gnb li b:first-child {
+  display: none;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+}
+.gnb li b:first-child::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #4d5bf9;
+  content: '';
+}
+.gnb li b:nth-child(2) {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+}
+.gnb li b:nth-child(2)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: #4d5bf9;
+  content: '';
+}
+.gnb li.active b:first-child,
+.gnb li.active b:nth-child(2) {
+  display: block;
+}
+.gnb li a {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.gnb li.active a {
+  color: #333;
+}
+.icon {
+  display: block;
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+ion-icon {
+  font-size: 1.5em;
+}
+.tit {
+  display: block;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+}
+
+/* Toggle */
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #4d5bf9;
+  cursor: pointer;
+}
+.toggle.active {
+  background: #ff4d89;
+}
+.toggle ion-icon {
+  display: none;
+  position: absolute;
+  font-size: 34px;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close {
+  display: block;
+}
+.toggle.active ion-icon.open,
+.toggle ion-icon.close {
+  display: none;
+}

@@ -1,0 +1,319 @@
+/* header */
+
+.logo {
+  position: absolute;
+  left: 30px;
+  top: 18px;
+}
+.logo a {
+  overflow: hidden;
+  display: block;
+  width: 176px;
+  height: 36px;
+  background: url(../images/logo.png) no-repeat 0 0;
+  text-indent: -9999px;
+}
+/* gnb */
+.gnb_list {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.4em;
+}
+.gnb_list > li {
+  display: inline-block;
+  margin: 0 45px;
+  letter-spacing: normal;
+}
+.gnb_list > li > a {
+  display: inline-block;
+  position: relative;
+  line-height: 70px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.gnb_list > li > a:after {
+  opacity: 0;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: #1428a0;
+  transform: translateX(-50%);
+  transition: width .3s ease-in-out;
+}
+.gnb_list > li.on > a:after {
+  opacity: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+.gnb_list > li > div {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 40px;
+}
+.gnb_list > li.on div {
+  display: block;
+}
+/* gnb_sub */
+.gnb_sub {
+  opacity: 0;
+  overflow: hidden;
+  margin: 40px 0;
+  height: 0;
+}
+.gnb_list > li.on .gnb_sub {
+  opacity: 1;
+  height: 100%;
+}
+.gnb_list > li.on:nth-child(4) .gnb_sub {
+  padding-bottom: 130px;
+}
+.gnb_list .gnb_sub > li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 40px;
+  border-right: 1px solid #ddd;
+  text-align: left;
+}
+.gnb_list .gnb_sub > li:last-child {
+  border: none;
+}
+.gnb_list .gnb_sub > li > a {
+  display: block;
+  color: #1428a0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gnb_list > li:nth-child(1) .gnb_sub > li {
+  height: 240px;
+}
+.gnb_list > li:nth-child(2) .gnb_sub > li {
+  height: 200px;
+}
+.gnb_list > li:nth-child(3) .gnb_sub > li {
+  height: 121px;
+}
+.gnb_list > li:nth-child(4) .gnb_sub > li {
+  height: 231px;
+}
+.gnb_list > li:nth-child(5) .gnb_sub > li {
+  height: 164px;
+}
+.gnb_btn {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gnb_btn a {
+  display: inline-block;
+  width: 320px;
+  height: 80px;
+  line-height: 30px;
+  margin-right: 5px;
+  padding: 10px 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: #fff url(../images/btn_arrow_ico_l.png) no-repeat 95% 50%;
+  font-size: 14px;
+  text-align: left;
+}
+.gnb_btn strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+.gnb_sub_list a:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.gnb_sub_list > ul {
+  float: left;
+  margin-right: 40px;
+}
+.gnb_sub_list > ul:last-child {
+  margin-right: 0;
+}
+/* top_menu */
+.top_menu {
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+.top_menu dd {
+  float: left;
+  width: 60px;
+}
+.top_menu dd:nth-of-type(1) {
+  overflow: hidden;
+  background: url(../images/ico_inq.png) no-repeat 50% 24px;
+  text-indent: -9999px;
+}
+.top_menu dd > a {
+  display: block;
+  position: relative;
+  width: 60px;
+  padding: 25px 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.top_menu dd > a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  transform: translateY(-5px);
+}
+.top_menu dd:nth-of-type(1) > a {
+  padding: 24px 0;
+}
+.top_menu dd:nth-of-type(1) > a:before {
+  display: none;
+}
+.top_menu dd ul {
+  display: none;
+  position: absolute;
+  top: 70px;
+  width: 60px;
+  padding-top: 10px;
+  border-top: 4px solid #043285;
+  background: #fff;
+}
+.top_menu dd:hover > ul {
+  display: block;
+}
+.top_menu_sns li a {
+  overflow: hidden;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.top_menu_sns li:nth-child(1) a {
+  background: #ededed url(../images/utill_sns_ico.png) no-repeat -30px 0;
+} 
+.top_menu_sns li:nth-child(2) a {
+  background: #ededed url(../images/utill_sns_ico.png) no-repeat -60px 0;
+} 
+.top_menu_sns li:nth-child(3) a {
+  background: #ededed url(../images/utill_sns_ico.png) no-repeat 0 0;
+} 
+.top_menu_sns li:nth-child(4) a {
+  background: #ededed url(../images/utill_sns_ico.png) no-repeat -120px 0;
+}
+.top_menu_lang li {
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+}
+.btn_srch {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn_srch a {
+  overflow: hidden;
+  display: block;
+  width: 60px;
+  height: 70px;
+  background: #043285 url(../images/btn_srch_ico.png) no-repeat 50% 50%;
+  text-indent: -9999px;
+}
+.btn_srch.on a {
+  display: none;
+}
+/* search all */
+.srch_wrap {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.srch_wrap.on {
+  display: block;
+}
+.srch_inner {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 260px;
+  padding-top: 60px;
+  background: url(../images/srch_pop_bg.jpg) no-repeat 50% 50%;
+}
+.srch_inner form {
+  width: 655px;
+  margin: 0 auto;
+}
+.srch_inner fieldset {
+  width: 100%;
+  height: 55px;
+  margin: 0 auto 20px;
+  background: #fff;
+}
+.srch_inner input[type="search"] {
+  width: 600px;
+  height: 55px;
+  text-indent: 20px;
+}
+.srch_inner button {
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  background: #333 url(../images/btn_srch_ico_l.png) no-repeat 50% 50%;
+  text-indent: -9999px;
+  vertical-align: middle;
+}
+.srch_inner ul {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #7fa6d3;
+}
+.srch_inner ul:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.srch_inner ul li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 8.5px;
+  padding: 0 29px;
+  border-radius: 5px;
+  background: #eee url(../images/btn_arrow_ico_m.png) no-repeat 90% 50%;
+}
+.srch_inner ul li:last-child {
+  margin-right: 0;
+}
+.btn_srch_close {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 70px;
+  background: #043285 url(../images/srch_pop_close.png) no-repeat 50% 50%;
+  text-indent: -9999px;
+}

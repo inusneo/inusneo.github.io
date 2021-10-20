@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Common */
+body, h1, h2, div, form, fieldset, 
+legend, ol, li, label, input {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #71b7e6 0%, #9b59b6 100%);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+ol {
+  list-style: none;
+}
+fieldset {
+  border: none;
+}
+legend, .blind {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+}
+.main-title {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+.container .title {
+  position: relative;
+  font-size: 25px;
+  font-weight: 500;
+}
+.container .title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(135deg, #71b7e6 0%, #9b59b6 100%);
+  content: '';
+}
+
+/* user */
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.user .user__box {
+  width: calc(50% - 20px);
+  margin-bottom: 15px;
+}
+.user .user__box .user__tit {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.user .user__box input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  box-sizing: border-box;
+  transition: all .3s ease 0s;
+}
+.user .user__box input:focus,
+.user .user__box input:valid {
+  border-color: #9b59b6;
+}
+
+/* gender */
+.gender .gender__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.gender .gender__select {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 14px 0;
+}
+.gender .gender__select label {
+  display: flex;
+  align-items: center;
+}
+.gender .gender__select input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: #d9d9d9;
+  transition: all .3s ease 0s;
+}
+.gender .gender__select input[type="radio"]:checked {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+}
+form input[type="submit"] {
+  appearance: none;
+  width: 100%;
+  height: 45px;
+  margin: 45px auto;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6 0%, #9b59b6 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .3s ease 0s;
+}
+form input[type="submit"]:hover {
+  border: 1px solid transparent;;
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  color: #333;
+}
+
+/* media query */
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  .user {
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+  .user::-webkit-scrollbar {
+    width: 0;
+  }
+  .user .user__box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .gender .gender__select {
+    width: 100%;
+  }
+}
