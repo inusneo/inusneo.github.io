@@ -33,7 +33,7 @@
 .sub-nav__list li {
   padding: 15px 0 15px 84px;
   border-bottom: 1px solid #ccc;
-  background: url(/images/nav_arrow.png) no-repeat 0 -4px;
+  background: url(../images/nav_arrow.png) no-repeat 0 -4px;
 }
 .sub-nav__list--select a {
   color: #951010;

@@ -74,7 +74,7 @@ a, input, select, button {
   float: left;
   margin-right: 20px;
   padding-right: 20px;
-  background: url(/images/nav_bar.png) no-repeat 100% 4px;
+  background: url(../images/nav_bar.png) no-repeat 100% 4px;
 }
 .top-menu li:last-child {
   margin-right: 0;
@@ -113,7 +113,7 @@ a, input, select, button {
   position: relative;
   width: 100%;
   height: 750px;
-  background: url(/images/main_visual.jpg) no-repeat center;
+  background: url(../images/main_visual.jpg) no-repeat center;
 }
 .main-visual__box {
   position: absolute;
@@ -174,7 +174,7 @@ a, input, select, button {
 }
 .main-bg { 
   height: 400px;  
-  background: url(/images/main-bg_fixed.jpg) no-repeat center fixed; 
+  background: url(../images/main-bg_fixed.jpg) no-repeat center fixed; 
 }
 
 /* main-drive */
@@ -269,7 +269,7 @@ a, input, select, button {
   width: 100%;
   height: 540px;
   margin-top: 40px;
-  background: url(/images/main_estimate_01.png), url(/images/main_estimate_02.jpg);
+  background: url(../images/main_estimate_01.png), url(../images/main_estimate_02.jpg);
   background-position: left top, left bottom;
   background-repeat: no-repeat;
 }
@@ -291,7 +291,7 @@ a, input, select, button {
 .main-care__box {
   width: 100%;
   height: 400px;
-  background: url(/images/care_img.jpg) no-repeat 0 0;
+  background: url(../images/care_img.jpg) no-repeat 0 0;
   color: #ccc;
   font-size: 14px;
 }
