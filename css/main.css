@@ -291,7 +291,7 @@ body.on {
 .skills__box dt {
   opacity: .5;
   margin-bottom: 15px;
-  padding-top: 75px;
+  padding-top: 90px;
   filter: grayscale(100%);
   font-size: var(--font-medium);
   font-weight: 500;
@@ -314,11 +314,9 @@ body.on {
   background: url(../images/icon_js.png) no-repeat 50% 0;
 }
 .skills__lang li:nth-of-type(4) dt {
-  padding-top: 90px;
   background: url(../images/icon_sass.png) no-repeat 50% 0;
 }
 .skills__lang li:nth-of-type(5) dt {
-  padding-top: 90px;
   background: url(../images/icon_react.png) no-repeat 50% 0;
 }
 .skills__lang li:last-of-type dt {
@@ -972,7 +970,7 @@ body.on {
     transition: all .3s ease-in-out;
   }
   .skills__lang li .skills__box dt {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-top: 50px;
     background-size: 40px 40px;
     background-position: 50% 20%;
@@ -1449,12 +1447,6 @@ body.on {
     background-size: 60px 60px;
     background-position: 50% 30%;
     font-size: var(--font-regular);
-  }
-  .skills__lang li:nth-of-type(4) dt {
-    padding-top: 75px;
-  }
-  .skills__lang li:nth-of-type(5) dt {
-    padding-top: 75px;
   }
 
   /* Skills Tools */
