@@ -77,3 +77,11 @@ a {
               inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3), 
               inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
 }
+
+@media screen and (max-width: 47.938rem) {
+  .wrap {
+    flex-direction: column;
+    max-width: 375px;
+    gap: 30px;
+  }
+}

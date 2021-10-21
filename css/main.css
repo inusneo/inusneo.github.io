@@ -978,6 +978,9 @@ body.on {
     background-position: 50% 20%;
     font-size: 1rem;
   }
+  .skills__box dd {
+    font-size: 0.75rem;
+  }
  
   /* Skills Tools */
 
@@ -1060,11 +1063,14 @@ body.on {
     margin-top: 15px;
     font-size: var(--font-regular);
   }
+  .desktop-only {
+    display: none; 
+  }
 
   /* Practical Section */
 
   .practical {
-    height: 833px;
+    height: 772px;
     margin-bottom: 60px;
   }
   .practical .tit-huge {
@@ -1074,6 +1080,18 @@ body.on {
   .tab__container {
     height: 715px; 
     margin-bottom: 60px;
+  }
+  .tab__list {
+    display: none;
+  }
+  .tab__list--smart {
+    display: block;
+  }
+  .tab__list--smart .tab__wrap {
+    display: block;
+  }
+  .tab__list--smart .tab__content {
+    margin-top: 40px;
   }
   .tab__menu {
     font-size: var(--font-regular);
@@ -1094,6 +1112,9 @@ body.on {
     left: 155px;
     top: 45px;
     white-space: nowrap;
+  }
+  .tab__menu--smart {
+    color: var(--color-point);
   }
   .tab__content {
     margin-top: 90px;
@@ -1116,7 +1137,7 @@ body.on {
     padding-top: 60px;
   }
   .item__details--two {
-    padding-top: 10px;
+    padding-top: 30px;
   }
   .item__details h4 {
     font-size: var(--font-regular);
@@ -1486,6 +1507,9 @@ body.on {
   .portfolio__pagination {
     margin-top: 20px;
   }
+  .desktop-only {
+    display: none; 
+  }
 
   /* Practical Section */
 
@@ -1497,6 +1521,15 @@ body.on {
   .tab__container {
     height: 715px; 
     margin-bottom: 60px;
+  }
+  .tab__list {
+    display: none;
+  }
+  .tab__list--smart {
+    display: block;
+  }
+  .tab__list--smart .tab__wrap {
+    display: block;
   }
   .tab__menu {
     font-size: var(--font-regular);
@@ -1515,6 +1548,9 @@ body.on {
   .tab__menu--navi {
     white-space: nowrap;
     left: 380px;
+  }
+  .tab__menu--smart {
+    color: var(--color-point);
   }
   .tab__content {
     margin-top: 60px;
@@ -1846,6 +1882,9 @@ body.on {
   .tab__container {
     height: 705px;
     margin-bottom: 90px;
+  }
+  .tab__list--smart {
+    display: none;
   }
   .tab__menu--hov {
     left: 0;
