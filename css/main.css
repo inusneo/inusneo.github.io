@@ -906,6 +906,7 @@ body.on {
   }
   .about .tit-huge {
     position: relative;
+    font-size: 60px;
     white-space: nowrap;
   }
   .about__shape {
@@ -980,9 +981,6 @@ body.on {
  
   /* Skills Tools */
 
-  .skills__tools {
-    overflow: visible;
-  }
   .skills__tools h3 {
     font-size: var(--font-regular);
   }
