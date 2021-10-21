@@ -730,18 +730,18 @@ del {
   .content2 article:nth-of-type(4) {
     right: 30px;
     top: 1060px;
-    width: 300px;
-    height: 574px;
+    width: 220px;
+    height: 450px;
   }
   .content2 article:nth-of-type(4) > a > span {
     display: block;
-    height: 427px;
+    height: 314px;
   }
   .content2 article:nth-of-type(5) {
     left: 30px;
     top: 1765px;
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
   }
   /* article 6 */
   .content2 article:nth-of-type(6) {
@@ -904,8 +904,8 @@ del {
 
   /* content3 */
   .content3 .inner {
-    width: 660px;
-    min-width: 660px;
+    width: 375px;
+    min-width: 375px;
     margin: 0 auto;
   }
   .content3 h2 {
@@ -939,6 +939,14 @@ del {
   .tab_menu li.on a {
     color: #222;
     text-decoration: underline;
+  }
+  .tab_cont {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .tab_cont ul {
+    width: 328px;
+    margin: 0 auto;
   }
   .tab_cont ul::after {
     display: block;
@@ -1080,6 +1088,7 @@ del {
     z-index: 20;
     position: relative;
     width: 189px;
+    margin-top: 10px;
     border: 1px solid #6d6d6d;
     background: #222;
     color: #a3a3a3;
@@ -1159,6 +1168,7 @@ del {
     z-index: 10;
     position: relative;
     width: 100%;
+    min-width: 984px;
     height: 120px;
   }
   .header_wrap {
@@ -1207,8 +1217,10 @@ del {
     background: #fff;
   }
   .content2 {
+    overflow: hidden;
     position: relative;
     width: 100%;
+    min-width: 984px;
     height: 2630px;
     background: url(../images/bg_hotcontent.png) no-repeat 0 100%;
     background-size: cover;
@@ -1216,6 +1228,7 @@ del {
   .content3 {
     position: relative;
     width: 100%;
+    min-width: 984px;
     padding: 70px 0 80px;
     background: #fff;
   }
@@ -1231,6 +1244,7 @@ del {
   .footer {
     position: relative;
     width: 100%;
+    min-width: 984px;
     height: 240px;
     background: #222;
     color: #777;
@@ -1819,7 +1833,7 @@ del {
   }
   /* article 10 */
   .content2 article:nth-of-type(10) {
-    left: 465px;
+    right: 20px;
     top: 1770px;
     width: 500px;
     height: 315px;
@@ -1929,7 +1943,14 @@ del {
   }
 
   /* content3 */
+  .content3 .inner {
+    width: 660px;
+    min-width: 660px;
+    margin: 0 auto;
+  }
   .content3 h2 {
+    width: 600px;
+    margin: 0 auto;
     font-size: 34px;
     line-height: 60px;
     font-family: cj_onlyone_medium;
@@ -2019,11 +2040,11 @@ del {
 
   /* minus */
   
-  .tab_cont li:nth-child(6n).on > span {
+  .tab_cont li:nth-child(4n).on > span {
     opacity: 1;
     left: -176px;
   }
-  .tab_cont li:nth-child(6n).on > span::before {
+  .tab_cont li:nth-child(4n).on > span::before {
     display: block;
     position: absolute;
     top: calc(50% - 8px);
@@ -2033,11 +2054,11 @@ del {
     background: url(../images/ico_alliance_arrow.png) no-repeat 0 0;
     content: '';
   }
-  .tab_cont li:nth-child(6n).minus > span {
+  .tab_cont li:nth-child(4n).minus > span {
     opacity: 1;
     left: -176px;
   }
-  .tab_cont li:nth-child(6n).minus > span::before {
+  .tab_cont li:nth-child(4n).minus > span::before {
     display: block;
     position: absolute;
     top: calc(50% - 8px);
@@ -2226,6 +2247,7 @@ del {
     background: #fff;
   }
   .content2 {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 2140px;
