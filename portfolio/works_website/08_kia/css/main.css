@@ -3,7 +3,7 @@
 /* Common */
 body { line-height: 1.6; color: #212121; font-size: 1rem; font-weight: 400; font-family: 'KiaSignature', sans-serif; }
 
-body.menu-open { position: fixed; top: 0; left: 0; }
+body.menu-open { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; }
 
 a { color: #212121; text-decoration: none; }
 
@@ -22,6 +22,6 @@ a { color: #212121; text-decoration: none; }
 
 .gnb { z-index: 10; overflow-y: scroll; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; padding: 70px 15px 15px 15px; background-color: rgba(5, 20, 31, 0.9); -webkit-backdrop-filter: blur(10px) brightness(110%); backdrop-filter: blur(10px) brightness(110%); }
 
-.gnb .gnb__list { text-align: center; }
+.gnb__list { text-align: center; }
 
-.gnb .gnb__list a { color: #fff; }
+.gnb__list a { display: block; width: 100%; height: 95px; line-height: 95px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); color: #fff; font-size: 1.125rem; }
