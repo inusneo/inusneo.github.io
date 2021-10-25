@@ -22,15 +22,21 @@ a { color: #212121; text-decoration: none; }
 .btn-link--more::after { display: inline-block; position: relative; top: 2px; width: 7px; height: 14px; margin-left: 15px; background: url(../images/icon_btn_arrow.svg) no-repeat center; background-size: 7px 14px; content: ''; }
 
 /* Header */
-.header { z-index: 1; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background-color: transparent; }
+.header { z-index: 1; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background-color: transparent; -webkit-transition: all .3s linear; transition: all .3s linear; }
 
 .header .header__inner { height: 100%; padding: 0 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.header.on { background-color: #fff; color: #212121; border-bottom: 1px solid #ececec; }
+.header.on { background-color: #fff; color: #212121; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.header.on .header__title img { -webkit-filter: brightness(1) invert(1); filter: brightness(1) invert(1); }
+
+.header.on .header__inner .btn--open { -webkit-filter: brightness(1) invert(1); filter: brightness(1) invert(1); }
 
 .header__title img { width: 160px; height: auto; }
 
 .gnb { z-index: 10; overflow-y: scroll; display: none; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; padding: 70px 15px 15px 15px; background-color: rgba(5, 20, 31, 0.9); -webkit-backdrop-filter: blur(10px) brightness(110%); backdrop-filter: blur(10px) brightness(110%); }
+
+.gnb.on { display: block; }
 
 .gnb__list { text-align: center; }
 
@@ -68,19 +74,41 @@ a { color: #212121; text-decoration: none; }
 
 .txt-box .txt-box__desc { font-size: 1rem; }
 
-.txt-box__watch { overflow-x: scroll; width: 100vw; padding-right: 30px; white-space: nowrap; }
+.txt-box__watch { overflow-x: scroll; width: 100%; padding-right: 30px; white-space: nowrap; }
 
 .txt-box__watch li { display: inline-block; width: 165px; height: 165px; margin-right: 15px; }
 
 /* Footer */
-.footer { background-color: #05141F; }
+.footer { background-color: #05141F; color: rgba(255, 255, 255, 0.6); font-size: 13px; }
 
 .footer .inner { padding: 60px 15px; }
 
 .footer__top { margin-bottom: 60px; }
 
-.site-all > li { border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.site-all > li { position: relative; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 .site-all > li > a { display: block; padding: 20px 0; color: #fff; font-size: 0.875rem; }
 
-.site-all__depth2 { border-top: 1px dashed rgba(255, 255, 255, 0.3); }
+.site-all__menu > a::after { display: inline-block; position: absolute; top: 30px; right: 0; width: 14px; height: 7px; background: url(../images/icon_menu_arrow.svg) no-repeat center; background-size: 14px 7px; content: ''; -webkit-transform: rotate(180deg); transform: rotate(180deg); -webkit-transition: -webkit-transform .3s linear; transition: -webkit-transform .3s linear; transition: transform .3s linear; transition: transform .3s linear, -webkit-transform .3s linear; }
+
+.site-all__menu.on > a::after { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+
+.site-all__menu.on .site-all__depth2 { display: block; }
+
+.site-all__depth2 { display: none; padding: 15px 0; border-top: 1px dashed rgba(255, 255, 255, 0.3); }
+
+.site-all__depth2 a { display: block; padding: 15px 0; color: rgba(255, 255, 255, 0.6); font-size: 0.875rem; text-align: center; }
+
+.footer__terms { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-column-gap: 15px; column-gap: 15px; margin: 60px 0 30px; }
+
+.footer__terms a { color: rgba(255, 255, 255, 0.6); font-size: 13px; }
+
+.footer__family { position: relative; margin: 30px 0; }
+
+.footer__family a { display: block; color: rgba(255, 255, 255, 0.6); }
+
+.footer__family > a { width: 220px; height: 30px; line-height: 26px; padding: 0 15px; border: 1px solid rgba(255, 255, 255, 0.6); background: url(../images/icon_menu_arrow_grey.svg) no-repeat calc(100% - 15px) center; background-size: 14px 7px; }
+
+.footer__family.on .footer__family--list { display: block; }
+
+.footer__family--list { display: none; position: absolute; top: -171px; left: 0; width: 220px; padding: 5px 15px; border: 1px solid rgba(255, 255, 255, 0.6); background-color: #05141F; }
