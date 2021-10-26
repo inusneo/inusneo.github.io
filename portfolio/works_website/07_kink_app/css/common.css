@@ -1,0 +1,14 @@
+@import url(reset.css);
+@import url(font.css);
+@import url(header.css);
+
+/* Common.CSS */
+
+body {
+  color: #031925;
+  font-size: 1rem;
+  font-family: 'SF Pro Desplay';
+}
+a { 
+  color: #031925; 
+}
