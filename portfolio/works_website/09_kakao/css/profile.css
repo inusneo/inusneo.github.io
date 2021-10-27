@@ -1,0 +1,66 @@
+@import url(common.css);
+
+/* Profile CSS */
+
+.title-bar .left-item a {
+  opacity: 1;
+  font-size: 20px;
+}
+.main {
+ height: calc(100% - 10px);
+}
+.background {
+  height: 65%;
+  background: url(../images/bg_default.png) no-repeat 0 0;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.profile-img {
+  position: absolute;
+  top: -65px;
+  width: 100px;
+  height: 100px;
+}
+.profile-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+.profile-name {
+  font-size: 16px;
+}
+.profile-email {
+  width: 148px;
+  height: 24px;
+  margin: 15px 0 30px;
+  text-align: center;
+}
+.profile-menu {
+  display: flex;
+}
+.profile-menu li {
+  margin: 0 5px;
+}
+.profile-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+.profile-menu span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: #513736;
+  font-size: 18px;
+  text-align: center;
+}

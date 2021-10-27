@@ -1,0 +1,140 @@
+@import url(common.css);
+
+/* Chatting CSS */
+
+.header {
+  border-bottom: 1px solid #96acba;
+  background-color: #a1c0d5;
+  color: #121212;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 109px);
+  padding: 0 15px;
+  padding-top: 64px;
+  background-color: #a1c0d5;
+}
+
+.date-info {
+  opacity: .5;
+  margin: 10px;
+  text-align: center;
+}
+.chat-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: fit-content;
+  max-width: calc(100% - 80px);
+}
+.chat {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  line-height: 1;
+  font-size: 16px;
+}
+.my {
+  align-items: flex-end;
+  align-self: flex-end;
+  max-width: 240px;
+  margin-bottom: 15px;
+}
+.my .chat {
+  background-color: #ffe73a;
+}
+.my .chat-time {
+  opacity: .5;
+  position: absolute;
+  left: -30px;
+  bottom: -5px;
+  width: 50px;
+}
+.other {
+  margin-left: 45px;
+}
+.other .profile-img {
+  position: absolute;
+  left: -60px;
+  top: -15px;
+  width: 35px;
+  height: 35px;
+}
+.other .profile-name {
+  display: block;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.other .chat-time {
+  opacity: .5;
+  position: absolute;
+  right: -40px;
+  bottom: -5px;
+  width: 50px;
+}
+
+.title-bar .left-item a {
+  opacity: 1;
+  color: #121212;
+  font-size: 24px;
+}
+.title-bar .right-item a {
+  color: #121212;
+  font-size: 16px;
+}
+.title-bar .right-item i {
+  padding-left: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #eee;
+}
+.plus-btn a {
+  padding-left: 15px;
+  color: #b3b4b4;
+  font-size: 16px;
+}
+.footer form {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 40px);
+  padding-right: 15px;
+}
+.text-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.text-field {
+  width: calc(100% - 40px);
+  height: 32px;
+}
+.emoticon-btn {
+  position: absolute;
+  right: 45px;
+}
+.emoticon-btn a {
+  color: #b3b4b4;
+}
+.voice-btn a {
+  display: block;
+  width: 34px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #ffe73a;
+  color: #513736;
+  font-size: 16px;
+  text-align: center;
+}

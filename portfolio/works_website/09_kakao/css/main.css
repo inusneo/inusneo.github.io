@@ -1,0 +1,77 @@
+@import url(common.css);
+
+/* Main CSS */
+
+.header {
+  background-color: #513736;
+}
+.main {
+ height: 85.8%; 
+ padding-top: 64px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  min-height: 53px;
+}
+.search-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  height: 50%;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #f1f2f4;
+}
+.search-inner i {
+  font-size: 16px;
+  color: #bebcc1;
+  align-self: center; /* 자식요소를 교차축을 기준으로 item 각각 지정 */
+}
+.search-inner input {
+  width: 90%;
+  background-color: transparent;
+}
+.search-inner input::placeholder {
+  text-align: center;
+}
+
+.main-section header {
+  height: 32px;
+  line-height: 32px;
+  padding-left: 15px;
+  border: 1px solid #ebebeb;
+  border-left: none;
+  border-right: none;
+  color: #b6b5b1;
+}
+.main-section ul {
+  display: flex;
+  flex-direction: column;
+}
+.main-section li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.profile-name {
+  flex: auto; /* 내용물의 크기만큼 차지 하도록 */
+}
+.profile-messages {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #8e9399;
+  font-size: 10px;
+}
+
+.tab-bar li:nth-of-type(1) a {
+  color: #513736;
+}

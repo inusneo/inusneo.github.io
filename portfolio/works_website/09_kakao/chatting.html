@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>KAKAO</title>
+  <link rel="apple-touch-icon-precomposed" href=".png" />
+  <link rel="apple-touch-startup-image" href=".png" />
+  <link rel="stylesheet" href="css/chatting.css">
+
+  <!-- Fontawesome CDN -->
+  <script src="https://kit.fontawesome.com/cdf5195ae9.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="status-bar">
+      <div class="left-item">
+        <i class="fas fa-plane"></i><i class="fas fa-wifi"></i>
+      </div>
+      <div class="center-item">
+        <span>17</span> : <span>33</span>
+      </div>
+      <div class="right-item">
+        <i class="far fa-moon"></i><i class="fab fa-bluetooth-b"></i><span>100%</span><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <!-- // Status-bar -->
+    <div class="title-bar">
+      <h1>Friend Name</h1>
+      <div class="left-item"><a href="chats.html"><i class="fas fa-angle-left"></i></a></div>
+      <div class="right-item"><a href="#"><i class="fas fa-search"></i><i class="fas fa-bars"></i></a></div>
+    </div>
+    <!-- // Title-bar -->
+  </header>
+  <!-- // Header -->
+  <!-- Main -->
+  <main class="main">
+    <span class="date-info">Monday, October 25, 2021</span>
+    <div class="chat-box my">
+      <span class="chat">Hello!</span>
+      <span class="chat">Hello! This is a test message. Hello!</span>
+      <span class="chat">This is a test message.</span>
+      <span class="chat-time"><span>16</span>:<span>30</span></span>
+    </div>
+    <!-- // My -->
+    <div class="chat-box other">
+      <div class="other-info">
+        <a href="#"><span class="profile-img empty"></span></a>
+        <span class="profile-name">Friend Name</span>
+      </div>
+      <span class="chat">And this is an answer</span>
+      <span class="chat">And this is an answer And this is an answer</span>
+      <span class="chat">And this is an answer</span>
+      <span class="chat-time"><span>17</span>:<span>10</span></span>
+    </div>
+  </main>
+  <!-- // Main -->
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="plus-btn"><a href="#"><i class="fas fa-plus"></i></a></span>
+    <form action="/" method="post">
+      <fieldset class="text-box">
+        <legend class="blind">채팅 입력창</legend>
+        <label for="chatting" class="blind">채팅 입력</label>
+        <input type="text" id="chatting" class="text-field" />
+        <span class="emoticon-btn"><a href="#"><i class="far fa-smile"></i></a></span>
+        <span class="voice-btn"><a href="#"><i class="fas fa-microphone"></i></a></span>
+      </fieldset>
+    </form>
+  </footer>
+  <!-- // Footer -->
+</body>
+</html>

@@ -571,3 +571,20 @@
 .now__list li:hover img {
   transform: scale(1.1);
 }
+
+/* Responsive Style */
+
+/* Mobile */ 
+@media screen and (max-width: 767px) {
+  
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+} 
+
+/* PC */ 
+@media screen and (min-width: 1024px) {
+      
+}

@@ -1,0 +1,18 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(tab.css);
+
+/* Common CSS */
+
+body { font-size: 12px; }
+a { color: #000; }
+
+.empty {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 10px 15px;
+  border-radius: 50%;
+  background: url(../images/empty.jpg) no-repeat 0 0;
+  background-size: cover;
+}

@@ -1,0 +1,107 @@
+@import url(common.css);
+
+/* Chats CSS */
+
+.header {
+  background-color: #513736;
+}
+.main {
+ height: 85.8%; 
+ padding-top: 64px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  min-height: 53px;
+}
+.search-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  height: 50%;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #f1f2f4;
+}
+.search-inner i {
+  font-size: 16px;
+  color: #bebcc1;
+  align-self: center; /* 자식요소를 교차축을 기준으로 item 각각 지정 */
+}
+.search-inner input {
+  width: 90%;
+  background-color: transparent;
+}
+.search-inner input::placeholder {
+  text-align: center;
+}
+
+.main-section ul {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ebebeb;
+}
+.main-section li {
+  border-bottom: 1px solid #ebebeb;
+}
+.main-section li a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.chats-img {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+}
+.chats-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+}
+.chats-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.chats-latest {
+  color: #8e9399;
+  font-size: 12px;
+}
+.chats-time {
+  margin-right: 15px;
+  color: #8e9399;
+  font-size: 12px;
+}
+
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+}
+.floating-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe84c;
+  box-shadow: 0 2px 6px #0004;
+  color: #513736;
+  font-size: 18px;
+  transition: all .3s linear;
+}
+.floating-btn a:hover {
+  background: #513736;
+  color: #ffe84c;
+}
+
+.tab-bar li:nth-of-type(2) a {
+  color: #513736;
+}
