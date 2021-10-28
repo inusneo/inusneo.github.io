@@ -37,18 +37,20 @@
   height: 100vh;
 }
 .content1 {
-  background: url(../images/bg_main1.png) no-repeat 0 -60px;
+  background: url(../images/bg_main1.png) no-repeat center;
 }
 .content2 {
-  background: url(../images/bg_main2.png) no-repeat 0 -60px;
+  background: url(../images/bg_main2.png) no-repeat center;
 }
 .content3 {
-  background: url(../images/bg_main3.png) no-repeat 0 -60px;
+  background: url(../images/bg_main3.png) no-repeat center;
 }
 .content4 {
-  background: url(../images/bg_main4.jpg) no-repeat 0 -60px;
+  background: url(../images/bg_main4.jpg) no-repeat center;
 }
 .bg-show {
+  display: flex;
+  align-items: center;
   opacity: 0;
   height: 100%;
   background-size: cover;
