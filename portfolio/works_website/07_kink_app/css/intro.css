@@ -1,0 +1,20 @@
+@import url(common.css);
+/* Variables */
+/* Intro.CSS */
+.intro { position: relative; width: 375px; height: 812px; background: url(../images/img_bg_intro.jpg) no-repeat 0 0; }
+
+.logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; top: 90px; width: 100%; }
+
+.logo h1 { position: relative; margin-bottom: 5px; }
+
+.logo p { color: #fff; font-weight: 400; }
+
+.logo .logo__tit { font-size: 1.75rem; font-weight: 700; }
+
+.logo .logo__txt { width: 50%; text-align: center; }
+
+.bottom { position: absolute; bottom: 75px; left: 50%; width: calc(100% - 30px); color: #fff; -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; }
+
+.bottom__already { margin-top: 15px; font-size: 0.875rem; }
+
+.bottom__already a { font-weight: 700; }

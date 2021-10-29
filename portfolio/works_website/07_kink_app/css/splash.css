@@ -1,7 +1,9 @@
 @import url(common.css);
 /* Variables */
 /* Splash.CSS */
-.splash { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100%; background: -webkit-gradient(linear, left top, left bottom, from(#34C759), to(#2D9CDB)); background: linear-gradient(#34C759 0%, #2D9CDB 100%); }
+.splash { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 375px; height: 812px; background: -webkit-gradient(linear, left top, left bottom, from(#34C759), to(#2D9CDB)); background: linear-gradient(#34C759 0%, #2D9CDB 100%); }
+
+.splash .header { color: #fff; }
 
 .splash__logo h1 { position: relative; margin-bottom: 5px; }
 

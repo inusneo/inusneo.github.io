@@ -1,0 +1,41 @@
+@import url(common.css);
+@import "variables.scss";
+
+/* Intro_login.CSS */
+
+.intro-login {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: #fff url(../images/img_bg_intro_02.png) no-repeat 0 45%;
+  .welcome__tit {
+    font-size: $huge-size;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+  .welcome__txt {
+    opacity: .5;
+    margin-top: 5px;
+    letter-spacing: -1px;
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  width: 100%;
+}
+.bottom{
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  width: calc(100% - 30px);
+  color: $white-color;
+  transform: translateX(-50%);
+  text-align: center;
+  .btn-border {
+    margin-top: 15px;
+  }
+}

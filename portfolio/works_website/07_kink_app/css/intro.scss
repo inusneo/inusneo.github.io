@@ -1,0 +1,51 @@
+@import url(common.css);
+@import "variables.scss";
+
+/* Intro.CSS */
+
+.intro {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: url(../images/img_bg_intro.jpg) no-repeat 0 0;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  width: 100%;
+  h1 {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  p{
+    color: $white-color;
+    font-weight: 400;
+  }
+  .logo__tit {
+    font-size: $huge-size;
+    font-weight: 700;
+  }
+  .logo__txt {
+    width: 50%;
+    text-align: center;
+  }
+}
+.bottom{
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  width: calc(100% - 30px);
+  color: $white-color;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.bottom__already {
+  margin-top: 15px;
+  font-size: $small-size;
+  a {
+    font-weight: 700;
+  }
+}

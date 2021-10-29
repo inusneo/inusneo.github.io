@@ -1,0 +1,55 @@
+@import url(common.css);
+@import "variables.scss";
+
+@mixin smallText() {
+  opacity: .5;
+  font-size: $small-size;
+}
+/* Login.CSS */
+
+.wrap {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  .login__tit {
+    font-size: $huge-size;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+  .login__sns {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    margin: 30px 0;
+  }
+  .login__txt {
+    @include smallText();
+    margin-bottom: 15px;
+  }
+  .login__forgot {
+    @include smallText();
+    margin: 15px 0;
+    align-self: flex-end;
+  }
+  .login__already {
+    margin-top: 120px;
+    color: $grey-color;
+    font-size: $small-size;
+    a {
+      color: $green-color;
+      font-weight: 700;
+    }
+  }
+}
+

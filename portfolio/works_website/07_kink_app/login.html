@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="apple-touch-icon-precomposed" href=".png" />
   <link rel="apple-touch-startup-image" href=".png" />
-  <link rel="stylesheet" href="css/splash.css" />
+  <link rel="stylesheet" href="css/login.css" />
 </head>
 <body>
-  <div class="splash">
+  <div class="wrap">
     <!-- Header -->
     <header class="header">
       <div class="status-bar">
@@ -32,15 +32,28 @@
     </header>
     <!-- // Header -->
 
-    <div class="splash__logo">
-      <h1>
-        <a href="intro.html">
-          <img src="images/img_logo_splash.png" alt="Kink Logo" />
-        </a>
-      </h1>
-      <p class="splash__txt">Korea + Link</p>
-    </div>
-    <p class="splash__load">Connecting Korea...</p>
+    <!-- Login -->
+    <section class="login">
+      <h2 class="login__tit">Log in</h2>
+      <div class="login__sns">
+        <a href="javascript:void(0);" class="btn-sns"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="javascript:void(0);" class="btn-sns btn-sns--twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+      <p class="login__txt">or log in with email </p>
+      <form action="/" method="post" class="form-login">
+        <fieldset>
+          <legend class="blind">Input id, password section</legend>
+          <input type="email" title="The email box" placeholder="Your Email" />
+          <input type="password" title="The password box" placeholder="Password" />
+        </fieldset>
+      </form>
+      <p class="login__forgot">Forgot password?</p>
+      <a href="login.html" title="Move to login page" class="btn">Log in</a>
+      <p class="login__already">
+        Don’t have an account? <a href="sign.html">Sign up</a>
+      </p>
+    </section>
+    <!-- // Login -->
   </div>
 </body>
 </html>

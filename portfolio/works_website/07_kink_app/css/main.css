@@ -1,2 +1,73 @@
 @import url(common.css);
-/* Main CSS */
+/* Variables */
+/* Main.CSS */
+.wrap { position: relative; width: 375px; height: 812px; background-color: #fff; }
+
+.main { overflow-y: auto; position: relative; top: 64px; width: calc(100% - 30px); height: 748px; margin: 0 auto; }
+
+.main > section { margin-bottom: 30px; }
+
+.main::-webkit-scrollbar { display: none; }
+
+.tit-main { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+
+.tit-thin { font-weight: normal; }
+
+/* Contents */
+.seasonal__swiper { padding-bottom: 30px; }
+
+.seasonal__item { width: 100%; }
+
+.seasonal__item figure { overflow: hidden; width: 100%; height: 130px; border-radius: 15px 15px 0 0; }
+
+.seasonal__item figure img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.seasonal__cont { position: relative; padding: 10px 15px 15px 15px; border-radius: 0 0 15px 15px; background-color: #F3FFF6; }
+
+.seasonal__cont h3 { font-weight: 700; margin-bottom: 5px; }
+
+.seasonal__cont .feed { position: absolute; right: 15px; top: 15px; font-size: 11px; }
+
+.seasonal__cont .feed span:first-of-type { margin-right: 5px; }
+
+.seasonal__cont .feed i { color: #34C759; margin-right: 5px; }
+
+.seasonal__cont > p { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; opacity: .5; width: 220px; text-overflow: ellipsis; word-break: break-all; font-size: 0.875rem; }
+
+.seasonal__cont .btn--inline { position: absolute; right: 15px; bottom: 15px; }
+
+.seasonal__pagination { position: absolute; left: 50%; bottom: 0px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.swiper-pagination-bullet-active { background-color: #34C759; }
+
+.popular__list { overflow-x: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 15px; width: 100%; padding-bottom: 15px; }
+
+.popular__list figure { overflow: hidden; border-radius: 15px 15px 0 0; width: 180px; height: 130px; }
+
+.popular__list figure img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.popular__list p { width: 100%; padding: 10px 15px 15px 15px; border-radius: 0 0 15px 15px; background-color: #F3FFF6; line-height: 1.2; font-weight: 700; text-align: center; }
+
+.nearby { padding-bottom: 90px; }
+
+.nearby__list { overflow-x: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 15px; padding-bottom: 15px; }
+
+.nearby__list figure { overflow: hidden; border-radius: 15px 15px 0 0; width: 140px; height: 120px; }
+
+.nearby__list figure img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.nearby__cont { padding: 10px 15px 15px 15px; border-radius: 0 0 15px 15px; background-color: #F3FFF6; }
+
+.nearby__tit-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 15px; }
+
+.nearby__tit-box span { font-weight: 700; }
+
+.nearby__tit-box .btn--inline { width: 36px; height: 18px; line-height: 18px; margin: 0; }
+
+.nearby__distance { position: relative; font-size: 14px; }
+
+.nearby__distance i { color: #818C92; }
+
+.nearby__distance .line-dotted { overflow: hidden; display: inline-block; width: 83px; height: 1px; border-top: 2px dotted #818C92; text-indent: -9999px; }
+
+.nearby__distance .meter { position: absolute; left: 50%; bottom: 8px; color: #818C92; font-size: 12px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }

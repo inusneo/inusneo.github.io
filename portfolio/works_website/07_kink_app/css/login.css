@@ -1,0 +1,18 @@
+@import url(common.css);
+/* Variables */
+/* Login.CSS */
+.wrap { position: relative; width: 375px; height: 812px; background-color: #fff; }
+
+.login { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; top: 90px; width: calc(100% - 30px); margin: 0 auto; }
+
+.login .login__tit { font-size: 1.75rem; font-weight: 700; letter-spacing: -2px; }
+
+.login .login__sns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 15px; width: 100%; margin: 30px 0; }
+
+.login .login__txt { opacity: .5; font-size: 0.875rem; margin-bottom: 15px; }
+
+.login .login__forgot { opacity: .5; font-size: 0.875rem; margin: 15px 0; -ms-flex-item-align: end; align-self: flex-end; }
+
+.login .login__already { margin-top: 120px; color: #818C92; font-size: 0.875rem; }
+
+.login .login__already a { color: #34C759; font-weight: 700; }

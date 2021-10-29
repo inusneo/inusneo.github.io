@@ -3,12 +3,12 @@
 .header {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 64px;
-  padding: 0 15px;
+  padding: 5px 15px 0;
   color: #000;
 }
 .status-bar {
@@ -42,6 +42,7 @@
 }
 .title-bar h1 {
   order: 2;
+  font-weight: 700;
   text-align: center;
 }
 .title-bar h1 span {
@@ -51,15 +52,15 @@
   order: 1;
   text-align: left;
 }
-.title-bar .left-item a {
-  opacity: .5;
-  color: #fff;
-}
 .title-bar .right-item {
   order: 3;
   text-align: right;
   font-size: 20px;
 }
+.title-bar .left-item a,
 .title-bar .right-item a {
-  color: #fff;
+  color: #34C759;
+}
+.title-bar .left-item i {
+  margin-right: 15px;
 }

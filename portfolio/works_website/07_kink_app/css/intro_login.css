@@ -1,0 +1,14 @@
+@import url(common.css);
+/* Variables */
+/* Intro_login.CSS */
+.intro-login { position: relative; width: 375px; height: 812px; background: #fff url(../images/img_bg_intro_02.png) no-repeat 0 45%; }
+
+.intro-login .welcome__tit { font-size: 1.75rem; font-weight: 700; letter-spacing: -2px; }
+
+.intro-login .welcome__txt { opacity: .5; margin-top: 5px; letter-spacing: -1px; }
+
+.welcome { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; top: 90px; width: 100%; }
+
+.bottom { position: absolute; bottom: 125px; left: 50%; width: calc(100% - 30px); color: #fff; -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; }
+
+.bottom .btn-border { margin-top: 15px; }

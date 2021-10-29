@@ -9,103 +9,244 @@
   <title>Kink</title>
   <!-- Fontawesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Swiper CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="apple-touch-icon-precomposed" href=".png" />
   <link rel="apple-touch-startup-image" href=".png" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- Swiper JS CDN -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="status-bar">
-      <div class="left-item">
-        <i class="fas fa-plane"></i><i class="fas fa-wifi"></i>
+  <div class="wrap">
+    <!-- Header -->
+    <header class="header">
+      <div class="status-bar">
+        <div class="left-item">
+          <i class="far fa-moon"></i><i class="fas fa-plane"></i>
+        </div>
+        <div class="center-item">
+          <span>10</span> : <span>50</span>
+        </div>
+        <div class="right-item">
+          <i class="fas fa-wifi"></i><span>100%</span><i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="center-item">
-        <span>17</span>:<span>33</span>
+      <!-- // Status-bar -->
+      <div class="title-bar">
+        <h1>Home</h1>
+        <div class="left-item"><a href="#"><i class="fas fa-chevron-left"></i>Login</a></div>
+        <div class="right-item"><a href="#"><i class="fas fa-bars"></i></a></div>
       </div>
-      <div class="right-item">
-        <i class="fas fa-moon"></i><i class="fas fa-bluetooth"></i>
+      <!-- // Title-bar -->
+    </header>
+    <!-- // Header -->
+    <!-- Main -->
+    <main class="main">
+      <div class="search-box">
+        <div class="search-inner">
+          <i class="fas fa-search"></i>
+          <input type="search" name="search" id="search" title="search input" placeholder="Area, City, Landmark..." />
+          <i class="fas fa-microphone"></i>
+        </div>
       </div>
-    </div>
-    <!-- // Status-bar -->
-    <div class="title-bar">
-      <h1>Friends <span>1</span></h1>
-      <div class="left-item"><a href="#">Manage</a></div>
-      <div class="right-item"><a href="#"><i class="fas fa-cog"></i></a></div>
-    </div>
-    <!-- // Title-bar -->
-  </header>
-  <!-- // Header -->
-  <!-- Main -->
-  <main>
-    <div class="search-box">
-      <div class="search-inner">
-        <i class="fas fa-search"></i>
-        <input type="search" name="search" id="search" placeholder="Find friends, Chats, Plus Friends" />
-      </div>
-    </div>
-    <!-- // Search-box -->
-    <section class="main-section">
-      <header><h2>My Profile</h2></header>
+      <!-- // Search-box -->
+      <section class="seasonal">
+        <h2 class="tit-main">Seasonal <span class="tit-thin">destinations</span></h2>
+        <div class="swiper seasonal__swiper">
+          <ul class="seasonal__list swiper-wrapper">
+            <li class="seasonal__item swiper-slide">
+              <figure>
+                <img src="images/img_seasonal_01.jpg" alt="Kyeongbok Palace View">
+              </figure>
+              <div class="seasonal__cont">
+                <h3>Kyeongbok Palace</h3>
+                <div class="feed">
+                  <span><i class="fas fa-heart"></i>3256</span>
+                  <span><i class="fas fa-comment-dots"></i>20</span>
+                </div>
+                <p>
+                  Gyeongbokgung Palace is a royal palace of the Joseon Dynasty located in Sejong-ro, Seoul Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn--inline">Details</a>
+              </div>
+            </li>
+            <!-- Slide 1 -->
+            <li class="seasonal__item swiper-slide">
+              <figure>
+                <img src="images/img_seasonal_02.jpg" alt="Kyeongbok Palace View">
+              </figure>
+              <div class="seasonal__cont">
+                <h3>Songdo City</h3>
+                <div class="feed">
+                  <span><i class="fas fa-heart"></i>1854</span>
+                  <span><i class="fas fa-comment-dots"></i>5</span>
+                </div>
+                <p>
+                  New Songdo Town in Incheon City has been chosen as the site of the permanent secretariat of the UN
+                </p>
+                <a href="#" class="btn btn--inline">Details</a>
+              </div>
+            </li>
+            <!-- Slide 2 -->
+            <li class="seasonal__item swiper-slide">
+              <figure>
+                <img src="images/img_seasonal_03.jpg" alt="Kyeongbok Palace View">
+              </figure>
+              <div class="seasonal__cont">
+                <h3>Korean Village</h3>
+                <div class="feed">
+                  <span><i class="fas fa-heart"></i>103</span>
+                  <span><i class="fas fa-comment-dots"></i>7</span>
+                </div>
+                <p>
+                  The Pil-dong area, where Hanok Village was built, had a flowing valley and Cheonugak during the
+                </p>
+                <a href="#" class="btn btn--inline">Details</a>
+              </div>
+            </li>
+            <!-- Slide 3 -->
+          </ul>
+          <div class="seasonal__pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- // Seasonal -->
+      <section class="popular">
+        <h2 class="tit-main">Popular <span class="tit-thin">reviews</span></h2>
+        <ul class="popular__list">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_popular_01.jpg" alt="Lotte Tower Aquarium">
+              </figure>
+              <p>
+                Lotte Tower<br />Aquarium
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_popular_02.jpg" alt="Lotte Tower Aquarium">
+              </figure>
+              <p>
+                Lotte Tower<br />Aquarium
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_popular_03.jpg" alt="Lotte Tower Aquarium">
+              </figure>
+              <p>
+                Lotte Tower<br />Aquarium
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- // Popular -->
+      <section class="nearby">
+        <h2 class="tit-main">Nearby <span class="tit-thin">restaurant</span></h2>
+        <ul class="nearby__list">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_nearby_01.jpg" alt="bibimbob picture">
+              </figure>
+              <div class="nearby__cont">
+                <div class="nearby__tit-box">
+                  <span>Bibim</span>
+                  <a href="#" class="btn btn--inline">Go</a>
+                </div>
+                <div class="nearby__distance">
+                  <i class="fas fa-walking"></i>
+                  <span class="line-dotted">dotted line</span>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="meter">20m</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- // Nearby list item 1 -->
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_nearby_02.jpg" alt="bibimbob picture">
+              </figure>
+              <div class="nearby__cont">
+                <div class="nearby__tit-box">
+                  <span>Sinsun</span>
+                  <a href="#" class="btn btn--inline">Go</a>
+                </div>
+                <div class="nearby__distance">
+                  <i class="fas fa-walking"></i>
+                  <span class="line-dotted">dotted line</span>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="meter">300m</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- // Nearby list item 2 -->
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/img_nearby_03.jpg" alt="bibimbob picture">
+              </figure>
+              <div class="nearby__cont">
+                <div class="nearby__tit-box">
+                  <span>Hangwa</span>
+                  <a href="#" class="btn btn--inline">Go</a>
+                </div>
+                <div class="nearby__distance">
+                  <i class="fas fa-walking"></i>
+                  <span class="line-dotted">dotted line</span>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="meter">100m</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- // Nearby list item 3 -->
+        </ul>
+      </section>
+      <!-- // Nearby -->
+    </main>
+    <!-- // Main -->
+    <!-- Tab-bar -->
+    <nav class="tab-bar">
       <ul>
-        <li>
-          <a href="profile.html">
-            <span class="profile-img"></span>
-            <span class="profile-name">My Name</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="profile-img"></span>
-            <span class="profile-name">Friends Names Display</span>
-          </a>
-        </li>
+        <li class="active"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="javascript:void(0);"><i class="fas fa-pen-square"></i>Review</a></li>
+        <li class="tab-bar__heart"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></li>
+        <li><a href="chat.html"><i class="fas fa-comments"></i>Chat</a></li>
+        <li><a href="javascript:void(0);"><i class="fas fa-user-circle"></i>My</a></li>
       </ul>
-    </section>
-    <section class="main-section">
-      <header><h2>Friends</h2></header>
-      <ul>
-        <li>
-          <a href="#">
-            <span class="profile-img"></span>
-            <span class="profile-name">Friend Name</span>
-            <span class="profile-messages">Have a good day, See you soon.</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="profile-img"></span>
-            <span class="profile-name">Friend Name</span>
-            <span class="profile-messages">Have a good day, See you soon.</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="profile-img"></span>
-            <span class="profile-name">Friend Name</span>
-            <span class="profile-messages">Have a good day, See you soon.</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="profile-img"></span>
-            <span class="profile-name">Friend Name</span>
-            <span class="profile-messages">Have a good day, See you soon.</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- // Main-section -->
-  </main>
-  <!-- // Main -->
-  <!-- Tab-bar -->
-  <nav class="tab-bar">
-    <ul>
-      <li><a href="index.html"><i class="fas fa-user">Friends</i></a></li>
-      <li><a href="chats.html"><i class="fas fa-comment">Chats</i></a></li>
-      <li><a href="find.html"><i class="fas fa-search">Find</i></a></li>
-      <li><a href="more.html"><i class="fas fa-ellipsis-h">More</i></a></li>
-    </ul>
-  </nav>
-  <!-- // Tab-bar -->
+    </nav>
+    <!-- // Tab-bar -->
+  </div>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".seasonal__swiper", {
+      spaceBetween: 15,
+      loop: true,
+      loopAdditionalSlides: 1,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
 </body>
 </html>

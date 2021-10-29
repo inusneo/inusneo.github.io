@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="apple-touch-icon-precomposed" href=".png" />
   <link rel="apple-touch-startup-image" href=".png" />
-  <link rel="stylesheet" href="css/splash.css" />
+  <link rel="stylesheet" href="css/sign.css" />
 </head>
 <body>
-  <div class="splash">
+  <div class="wrap">
     <!-- Header -->
     <header class="header">
       <div class="status-bar">
@@ -32,15 +32,28 @@
     </header>
     <!-- // Header -->
 
-    <div class="splash__logo">
-      <h1>
-        <a href="intro.html">
-          <img src="images/img_logo_splash.png" alt="Kink Logo" />
-        </a>
-      </h1>
-      <p class="splash__txt">Korea + Link</p>
-    </div>
-    <p class="splash__load">Connecting Korea...</p>
+    <!-- Sign -->
+    <section class="sign">
+      <h2 class="sign__tit">Create account</h2>
+      <div class="sign__sns">
+        <a href="javascript:void(0);" class="btn-sns"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="javascript:void(0);" class="btn-sns btn-sns--twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+      <form action="/" method="post" class="form-login">
+        <fieldset>
+          <legend class="blind">Input id, password section</legend>
+          <input type="text" title="The username box" placeholder="Username" />
+          <input type="email" title="The email box" placeholder="Your Email" />
+          <input type="password" title="The password box" placeholder="Password" />
+          <input type="password" title="The confirm password box" placeholder="Confirm Password" />
+        </fieldset>
+      </form>
+      <a href="sign.html" title="Move to sign page" class="btn">Sign up</a>
+      <p class="sign__already">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </section>
+    <!-- // Sign -->
   </div>
 </body>
 </html>
