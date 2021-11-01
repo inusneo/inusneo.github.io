@@ -30,8 +30,8 @@
       </div>
       <!-- // Status-bar -->
       <div class="title-bar">
-        <h1>Chat</h1>
-        <div class="left-item"><a href="index.html"><i class="fas fa-chevron-left"></i>Home</a></div>
+        <h1>Friend Name</h1>
+        <div class="left-item"><a href="chats.html"><i class="fas fa-chevron-left"></i>chats</a></div>
         <div class="right-item"><a href="#"><i class="fas fa-bars"></i></a></div>
       </div>
       <!-- // Title-bar -->
@@ -40,93 +40,53 @@
 
     <!-- Main -->
     <main class="main">
-      <div class="search-box">
-        <div class="search-inner">
-          <i class="fas fa-search"></i>
-          <input type="search" name="search" id="search" title="search input" placeholder="Your Friends Name..." />
-          <i class="fas fa-microphone"></i>
-        </div>
+      <h2 class="chat-date">Monday, October 25, 2021</h2>
+      <div class="chat-box other">
+        <div class="other__info">
+          <a href="#"><span class="other__profile"></span></a>
+          <div class="chat-box__info">
+            <span class="chat-box__time">
+              <span>10</span>:<span>38</span>
+            </span>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div> 
+        <span class="msg">Hello!</span>
+        <span class="msg">Hello! Finally found the time to write. I need your help with creating interactive animations for my mobile application.</span>
+        <span class="msg">This is a test message.</span>
       </div>
-      <!-- // Search-box -->
-      <section class="chats">
-        <header class="blind"><h2>Chats</h2></header>
-        <ul>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img online"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Elizabeth Fleck</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time new"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img online"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Dan Evans</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time new"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img online"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Steve Lawson</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time new"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img absensce"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Louisa Gilbert</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img absensce"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Walter Woodkin</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-          <li class="chats__list">
-            <a href="chatting.html">
-              <div class="chats__img offline"></div>
-              <div class="chats__cont">
-                <p class="chats__name">Kevin Nelson</p>
-                <span class="chats__msg">Hello! This is a test message!</span>
-              </div>
-              <div class="chats__time"><span>14</span>:<span>22</span></div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- // Main-section -->
+      <!-- // Other -->
+      <div class="chat-box my">
+        <div class="chat-box__info">
+          <span class="chat-box__time">
+            <span>10</span>:<span>38</span>
+          </span>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <span class="msg">And this is an answer</span>
+        <span class="msg">And this is an answer And this is an answer</span>
+        <span class="msg">And this is an answer</span>
+      </div>
+      <!-- // My -->
     </main>
     <!-- // Main -->
-    <!-- Tab-bar -->
-    <nav class="tab-bar">
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-        <li><a href="javascript:void(0);"><i class="fas fa-pen-square"></i>Review</a></li>
-        <li class="tab-bar__heart"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></li>
-        <li class="active"><a href="chat.html"><i class="fas fa-comments"></i>Chat</a></li>
-        <li><a href="javascript:void(0);"><i class="fas fa-user-circle"></i>My</a></li>
-      </ul>
-    </nav>
-    <!-- // Tab-bar -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="chatting-box">
+        <a href="#" class="btn-plus"><i class="fas fa-plus"></i></a>
+        <form action="/" method="post">
+          <fieldset>
+            <legend class="blind">채팅 입력창</legend>
+            <label for="chatting" class="blind">채팅 입력</label>
+            <input type="text" id="chatting" class="chatting-field" placeholder="Type a message here"/>
+            <a href="#" class="btn-emoji"><i class="far fa-smile"></i></a>
+            <a href="#" class="btn-send"><i class="fas fa-location-arrow"></i></a>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+    <!-- // Footer -->
   </div>
 </body>
 </html>

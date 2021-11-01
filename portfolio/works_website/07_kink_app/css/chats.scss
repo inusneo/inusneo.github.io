@@ -1,11 +1,7 @@
 @import url(common.css);
 @import "variables.scss";
 
-@mixin smallText() {
-  opacity: .5;
-  font-size: $small-size;
-}
-/* Sign.CSS */
+/* Chats.CSS */
 
 .wrap {
   position: relative;

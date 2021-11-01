@@ -1,0 +1,38 @@
+@import url(common.css);
+/* Variables */
+/* Chatting.CSS */
+.wrap { position: relative; width: 375px; height: 812px; background-color: #fff; }
+
+.main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; top: 64px; width: calc(100% - 30px); height: 733px; margin: 0 auto; }
+
+.chat-date { opacity: .5; margin: 10px; font-size: 12px; font-weight: 700; text-align: center; }
+
+.chat-box { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; position: relative; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; max-width: calc(100% - 40px); }
+
+.chat-box .chat-box__info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; color: #818C92; font-size: 12px; }
+
+.chat-box .msg { margin: 5px 0; max-width: 240px; padding: 5px 15px; border-radius: 0 15px 15px 15px; background-color: #efefef; line-height: 1.4; color: #818C92; font-size: 14px; }
+
+.other { margin-left: 55px; }
+
+.other .other__info { position: relative; width: 100%; }
+
+.other .other__info .other__profile { display: inline-block; position: absolute; left: -55px; top: 0; width: 42px; height: 42px; background: url(../images/img_friends_01.png) no-repeat 0 0; background-size: 42px 42px; }
+
+.my { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -ms-flex-item-align: end; align-self: flex-end; margin-top: 30px; }
+
+.my .msg { border-radius: 15px 15px 0 15px; background-color: #34C759; color: #fff; }
+
+.footer { position: relative; margin: 0 15px; padding: 15px 0; border-top: 1px solid #eff0f2; }
+
+.chatting-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #eff0f2; height: 46px; padding: 5px 6px; border-radius: 23px; }
+
+.chatting-box .chatting-field { min-width: 190px; background: transparent; }
+
+.chatting-box .chatting-field::-webkit-input-placeholder { color: #818C92; }
+
+.chatting-box .chatting-field:-ms-input-placeholder { color: #818C92; }
+
+.chatting-box .chatting-field::-ms-input-placeholder { color: #818C92; }
+
+.chatting-box .chatting-field::placeholder { color: #818C92; }

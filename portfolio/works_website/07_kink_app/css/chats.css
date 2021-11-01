@@ -1,6 +1,6 @@
 @import url(common.css);
 /* Variables */
-/* Sign.CSS */
+/* Chats.CSS */
 .wrap { position: relative; width: 375px; height: 812px; background-color: #fff; }
 
 .main { overflow-y: auto; position: relative; top: 64px; width: calc(100% - 30px); height: 748px; margin: 0 auto; }
