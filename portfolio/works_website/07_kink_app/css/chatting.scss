@@ -1,0 +1,108 @@
+@import url(common.css);
+@import "variables.scss";
+
+@mixin smallText() {
+  opacity: .5;
+  font-size: $small-size;
+}
+/* Sign.CSS */
+
+.wrap {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+}
+.main {
+  overflow-y: auto;
+  position: relative;
+  top: 64px;
+  width: calc(100% - 30px);
+  height: 748px;
+  margin: 0 auto;
+  > section {
+    margin-bottom: 30px;
+  }
+}
+.chats__list {
+  padding: 15px 0;
+  border-bottom: 1px solid #eff0f2;
+  a {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .chats__img {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+  .chats__img::after {
+    display: block;
+    position: absolute;
+    right: -7px;
+    bottom: -2px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    content: '';
+  }
+  .chats__img.online::after {
+    background-color: $green-color;
+  }
+  .chats__img.absensce::after {
+    background-color: #E1B106;
+  }
+  .chats__img.offline::after {
+    background-color: #818C92;
+  }
+}
+.chats__list:first-of-type {
+  background: url(../images/img_friends_01.png) no-repeat 0 50%;
+}
+.chats__list:nth-of-type(2) {
+  background: url(../images/img_friends_02.png) no-repeat 0 50%;
+}
+.chats__list:nth-of-type(3) {
+  background: url(../images/img_friends_03.png) no-repeat 0 50%;
+}
+.chats__list:nth-of-type(4) {
+  background: url(../images/img_friends_04.png) no-repeat 0 50%;
+}
+.chats__list:nth-of-type(5) {
+  background: url(../images/img_friends_05.png) no-repeat 0 50%;
+}
+.chats__list:last-of-type {
+  background: url(../images/img_friends_06.png) no-repeat 0 50%;
+}
+.chats__cont {
+  .chats__name {
+    font-weight: 700;
+  }
+  .chats__msg {
+    opacity: .5;
+    font-size: 14px;
+  }
+}
+.chats__time {
+  position: relative;
+  color: #818C92;
+  font-size: 12px;
+  &.new::after {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 15px;
+    height: 15px;
+    line-height: 1.25;
+    border-radius: 50%;
+    background-color: #eb5757;
+    color: #fff;
+    text-align: center;
+    content: '2';
+  }
+}
