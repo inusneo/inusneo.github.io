@@ -1828,7 +1828,8 @@ body.on {
   /* Portfolio Section */
 
   .portfolio .tit-huge {
-    left: 300px;
+    position: relative;
+    left: 235px;
     margin-bottom: 70px;
   }
   .portfolio__container {
@@ -1920,6 +1921,7 @@ body.on {
   /* Records Section */
 
   .records .tit-huge {
+    position: relative;
     left: -130px;
   }
   .records__list {
