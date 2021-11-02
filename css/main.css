@@ -198,9 +198,7 @@ body.on {
 
 /* About Section */
 
-.about {
-  position: relative;
-}
+.about,
 .about .tit-huge {
   position: relative;
 }
@@ -899,11 +897,9 @@ body.on {
   /* About Section */
 
   .about {
-    position: relative;
     margin: 60px 0;
   }
   .about .tit-huge {
-    position: relative;
     font-size: 60px;
     white-space: nowrap;
   }
