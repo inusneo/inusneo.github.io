@@ -1,7 +1,7 @@
 @import url(common.css);
 /* Variables */
 /* Intro.CSS */
-.intro { position: relative; width: 375px; height: 812px; background: url(../images/img_bg_intro.jpg) no-repeat 0 0; }
+.intro { background: url(../images/img_bg_intro.jpg) no-repeat 0 0; }
 
 .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; top: 90px; width: 100%; }
 

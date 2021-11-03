@@ -14,6 +14,13 @@ body {
   font-size: 1rem;
   font-family: "Noto Sans", sans-serif;
 }
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+}
 a { 
   color: #031925; 
 }

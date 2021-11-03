@@ -1,7 +1,7 @@
 @import url(common.css);
 /* Variables */
 /* Intro_login.CSS */
-.intro-login { position: relative; width: 375px; height: 812px; background: #fff url(../images/img_bg_intro_02.png) no-repeat 0 45%; }
+.intro-login { background: #fff url(../images/img_bg_intro_02.png) no-repeat 0 45%; }
 
 .intro-login .welcome__tit { font-size: 1.75rem; font-weight: 700; letter-spacing: -2px; }
 
