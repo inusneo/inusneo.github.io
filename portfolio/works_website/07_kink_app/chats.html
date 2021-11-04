@@ -35,7 +35,7 @@
       <div class="title-bar">
         <h1>Chat</h1>
         <div class="left-item"><a href="index.html"><i class="fas fa-chevron-left"></i>Home</a></div>
-        <div class="right-item"><a href="#"><i class="fas fa-bars"></i></a></div>
+        <div class="right-item"><a href="#" class="btn-drawer"><i class="fas fa-bars"></i></a></div>
       </div>
       <!-- // Title-bar -->
     </header>
@@ -130,6 +130,31 @@
       </ul>
     </nav>
     <!-- // Tab-bar -->
+    
+    <!-- Drawer -->
+    <div class="drawer">
+      <div class="drawer__inner">
+        <div class="drawer__profile">
+          <figure>
+            <img src="images/img_drawer_profile.png" alt="profile image" />
+          </figure>
+          <p class="profile-info">
+            Eduardo illiamson<br />
+            <span class="profile-info__location">San Francisco, CA</span>
+          </p>
+        </div>
+        <ul class="drawer__nav">
+          <li class="select"><a href="javascript:void(0);"><i class="fas fa-ticket-alt"></i> Discount</a></li>
+          <li><a href="javascript:void(0);"><i class="fas fa-paper-plane"></i> Send Feedback</a></li>
+          <li><a href="javascript:void(0);"><i class="fas fa-bell"></i> Notification</a></li>
+          <li><a href="javascript:void(0);"><i class="fas fa-users"></i> Friends List</a></li>
+          <li><a href="javascript:void(0);"><i class="fas fa-bookmark"></i> Book Mark</a></li>
+        </ul>
+        <button type="button" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Log out</button>
+      </div>
+      <!-- // Drawer__inner -->
+    </div>
+    <!-- // Drawer -->
   </div>
 </body>
 </html>

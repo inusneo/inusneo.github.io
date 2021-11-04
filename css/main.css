@@ -360,12 +360,6 @@ body.on {
   text-align: center;
   transition: all .3s ease-in-out;
 }
-.btn-circle--prev {
-  display: none;
-}
-.btn-circle--next {
-  display: none;
-}
 
 /* Skills list Hover Effect */
 
@@ -1224,6 +1218,12 @@ body.on {
   .btn-top {
     left: calc(50% + 324px);
     bottom: 90px;
+  }
+  .btn-circle--prev {
+    display: none;
+  }
+  .btn-circle--next {
+    display: none;
   }
 
 }

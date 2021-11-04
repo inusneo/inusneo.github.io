@@ -169,8 +169,8 @@ a {
 .tab-bar__heart a {
   display: block;
   position: absolute;
-  top: -45px;
   left: -34px;
+  top: -45px;
   width: 68px;
   height: 68px;
   line-height: 78px;
@@ -181,4 +181,68 @@ a {
 .tab-bar__heart a i {
   margin-bottom: 0;
   color: #fff;
+}
+
+/* Drawer */
+
+.drawer {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all .3s ease-in-out;
+}
+.drawer.on {
+  opacity: 1;
+  z-index: 100;
+}
+.drawer__inner {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 45px 30px;
+  background-color: #fff;
+  font-size: 14px;
+  transform: translateX(-100%);
+  transition: all .3s ease-in-out;
+}
+.drawer.on .drawer__inner {
+  transform: translateX(0);
+}
+.profile-info {
+  margin-top: 15px;
+  font-weight: 700;
+}
+.profile-info__location {
+  color: #818C92;
+  font-size: 12px;
+  font-weight: 300;
+}
+.drawer__nav {
+  margin: 45px 0 90px;
+}
+.drawer__nav li {
+  margin-bottom: 30px;
+}
+.drawer__nav li.select a {
+  color: #34C759;
+  font-weight: 700;
+}
+.drawer__nav a,
+.btn-logout {
+  color: #818C92;
+}
+.drawer__nav a i {
+  width: 30px;
+}
+.btn-logout {
+  cursor: pointer;
+}
+.btn-logout i {
+  margin-right: 15px;
+  font-size: 18px;
 }
