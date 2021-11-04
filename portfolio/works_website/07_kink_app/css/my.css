@@ -1,0 +1,18 @@
+@import url(common.css);
+/* Variables */
+/* Chats.CSS */
+.main { overflow-y: auto; position: relative; top: 64px; width: calc(100% - 30px); height: 748px; margin: 0 auto; }
+
+.my { text-align: center; }
+
+.my__profile { margin: 30px 0; font-weight: 700; }
+
+.my__profile h2 { margin-bottom: 15px; }
+
+.my__profile .locate { font-size: 14px; color: #818C92; font-weight: 300; }
+
+.my__details dl { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 15px 10px; border-bottom: 1px solid #ccc; font-size: 14px; }
+
+.my__details dl dt { color: #818C92; }
+
+.my__details dl:last-of-type { border-bottom: none; }
