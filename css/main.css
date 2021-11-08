@@ -1710,7 +1710,7 @@ body.on {
     font-size: var(--font-huge);
   }
   .welcome__text {
-    width: 530px;
+    max-width: 540px;
     margin: 15px 0 70px;
   }
   .welcome__shape {
