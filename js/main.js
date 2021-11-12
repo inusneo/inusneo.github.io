@@ -66,6 +66,7 @@ mLinks.forEach(mLink => {
   mLink.addEventListener('click', (e) => {
     e.preventDefault();
     let popHref = e.target;
+    console.log(popHref);
     showPopup(popHref);
   });
 })
