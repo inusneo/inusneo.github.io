@@ -54,6 +54,20 @@ window.addEventListener('scroll', () => {
   });
 });
 
+/* Portfolio Popup */
+
+const mLink = document.querySelector('.mobile-popup');
+const mHref = document.querySelector('.mobile-popup').href;
+console.log(mHref);
+
+function showPopup() {
+  window.open(mHref, "test", "width=375, height=812, top=0, left=0");
+}
+mLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showPopup();
+});
+
 /* Hamburger Menu */
 
 const hamburg = document.querySelector('.btn-menu');
