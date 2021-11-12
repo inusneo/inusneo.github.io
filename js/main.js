@@ -56,17 +56,19 @@ window.addEventListener('scroll', () => {
 
 /* Portfolio Popup */
 
-const mLink = document.querySelector('.mobile-popup');
-const mHref = document.querySelector('.mobile-popup').href;
-console.log(mHref);
+const mLinks = document.querySelectorAll('.mobile-popup');
 
-function showPopup() {
-  window.open(mHref, "test", "width=375, height=812, top=0, left=0");
+function showPopup(getHref) {
+  window.open(getHref, "test", "width=375, height=812, top=0, left=0");
 }
-mLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  showPopup();
-});
+
+mLinks.forEach(mLink => {
+  mLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    let popHref = e.target;
+    showPopup(popHref);
+  });
+})
 
 /* Hamburger Menu */
 
