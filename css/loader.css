@@ -63,3 +63,17 @@
   font-weight: 500;
   letter-spacing: 10px;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 47.938rem) {
+  .loader__dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 10px 5px;
+  }
+  .loader__tit {
+    font-size: 16px;
+  }
+}
