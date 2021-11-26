@@ -1,5 +1,5 @@
 var options = { 
-  strings: ['#Web Publisher!', '#Web Designer!', '#UI/UX Developer!'],
+  strings: ['#Web Publisher!', '#Web Designer!', '#UI Developer!'],
   typeSpeed: 40,
   backSpeed: 80,
   fadeOut: false,
