@@ -1,7 +1,6 @@
 /* Main CSS */
 
 /* Common */
-
 body.on {
   position: fixed;
   left: 0;
@@ -69,7 +68,6 @@ body.on {
 }
 
 /* Hamberger Menu */
-
 .btn-menu {
   vertical-align: middle;
   position: relative;
@@ -116,10 +114,12 @@ body.on {
 }
 
 /* Header Section */
-
 .header {
+  z-index: 12;
+  position: sticky;
+  top: 0;
   width: 100%;
-  transition: all .3s ease-in-out;
+  transition: transform .2s, background-color .2s;
 }
 .header .inner {
   display: flex;
@@ -133,23 +133,17 @@ body.on {
   transform: translate3d(0, -100%, 0);
 }
 .header.scroll-up {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
   background-color: var(--color-dark);
-  transform: translate3d(0, 0, 0);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Gnb Section */
-
 .gnb a {
   position: relative;
   color: var(--color-white);
   font-weight: 500;
-  transition: all .3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 .gnb a:hover,
 .gnb a.active {
@@ -166,7 +160,7 @@ body.on {
   background-color: var(--color-point);
   content: '';
   transform: translateX(-50%);
-  transition: all .3s ease-in-out;
+  transition: opacity .3s ease-in-out, width .3s ease-in-out;
 }
 .gnb a:hover::after,
 .gnb a.active::after {
@@ -175,7 +169,6 @@ body.on {
 }
 
 /* Welcome Section */
-
 .welcome .tit-huge {
   position: absolute;
   transform: rotate(-90deg);
@@ -196,7 +189,6 @@ body.on {
 }
 
 /* About Section */
-
 .about,
 .about .tit-huge {
   position: relative;
@@ -270,7 +262,6 @@ body.on {
 }
 
 /* Skills Section */
-
 .skills__lang li::before,
 .skills__list li::before {
   z-index: 0;
@@ -321,7 +312,6 @@ body.on {
 }
 
 /* Skills lang Hover Effect */
-
 .skills__lang li:hover {
   background-color: var(--color-dark);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
@@ -341,7 +331,6 @@ body.on {
 }
 
 /* Skills Tools */
-
 .skills__container {
   position: relative;
 }
@@ -361,7 +350,6 @@ body.on {
 }
 
 /* Skills list Hover Effect */
-
 .skills__list li:hover {
   background-color: var(--color-dark);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
@@ -397,7 +385,6 @@ body.on {
 }
 
 /* Portfolio Section */
-
 .portfolio__container {
   position: relative;
 }
@@ -488,7 +475,6 @@ body.on {
 }
 
 /* Portfolio Hover Effect */
-
 .portfolio__img:hover img {
   transform: scale(1.1);
 }
@@ -505,7 +491,6 @@ body.on {
 }
 
 /* Practical Section */
-
 .tab__container {
   position: relative;
 }
@@ -615,7 +600,6 @@ body.on {
 }
 
 /* Items Hover Effect */
-
 .item:hover img {
   transform: scale(1.1);
 }
@@ -636,7 +620,6 @@ body.on {
 }
 
 /* Records Section */
-
 .records__list {
   display: flex;
   justify-content: space-between;
@@ -700,7 +683,6 @@ body.on {
 }
 
 /* Epilogue Section */
-
 .epilogue__content h3 {
   line-height: 1.3;
   font-weight: 700;
@@ -729,11 +711,9 @@ body.on {
 }
 
 /* Mobile */
-
 @media screen and (max-width: 47.938rem) {
   
   /* Dim */
-  
   body {
     font-size: var(--font-small);
   }
@@ -748,7 +728,6 @@ body.on {
   }
 
   /* Header */
-
   .header {
     height: 40px;
   }
@@ -832,7 +811,6 @@ body.on {
   }
 
   /* Hamburger Menu */
-
   .btn-menu {
     width: 24px;
     height: 16px;
@@ -859,7 +837,6 @@ body.on {
   }
 
   /* Main Common */
-  
   .main .inner {
     position: relative;
     width: 345px;
@@ -873,7 +850,6 @@ body.on {
   }
 
   /* Welcome Section */
-  
   .welcome {
     margin-top: 30px;
   }
@@ -899,7 +875,6 @@ body.on {
   }
 
   /* About Section */
-
   .about {
     margin: 60px 0;
   }
@@ -949,7 +924,6 @@ body.on {
   }
   
   /* Skills Section */
-
   .skills {
     margin-bottom: 60px;
   }
@@ -979,9 +953,8 @@ body.on {
   .skills__box dd {
     font-size: 0.75rem;
   }
- 
-  /* Skills Tools */
 
+  /* Skills Tools */
   .skills__tools h3 {
     font-size: var(--font-regular);
   }
@@ -1021,7 +994,6 @@ body.on {
   }
 
   /* Portfolio Section */
-
   .portfolio {
     margin-bottom: 60px;
   }
@@ -1066,7 +1038,6 @@ body.on {
   }
 
   /* Practical Section */
-
   .practical {
     height: 772px;
     margin-bottom: 60px;
@@ -1142,7 +1113,6 @@ body.on {
   }
 
   /* Records Section */
-  
   .records .tit-huge {
     position: relative;
     right: 0;
@@ -1183,7 +1153,6 @@ body.on {
   }
 
   /* Epilogue Section */
-
   .epilogue {
     display: flex;
     flex-direction: column;
@@ -1239,11 +1208,9 @@ body.on {
 }
 
 /* Tablet */
-
 @media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   
   /* Dim */
-
   .dim.on {
     z-index: 10;
     position: absolute;
@@ -1255,7 +1222,6 @@ body.on {
   }
 
   /* Header */
-
   .header {
     height: 70px;
   }
@@ -1339,7 +1305,6 @@ body.on {
   }
 
   /* Main Common */
-  
   .main .inner {
     position: relative;
     width: 568px;
@@ -1350,7 +1315,6 @@ body.on {
   }
 
   /* Welcome Section */
-  
   .welcome {
     margin-top: 40px;
   }
@@ -1381,7 +1345,6 @@ body.on {
   }
 
   /* About Section */
-
   .about {
     position: relative;
     margin: 60px 0;
@@ -1424,7 +1387,6 @@ body.on {
   }
   
   /* Skills Section */
-
   .skills {
     margin-bottom: 60px;
   }
@@ -1456,7 +1418,6 @@ body.on {
   }
 
   /* Skills Tools */
-
   .skills__tools h3 {
     font-size: 1.25rem;
     margin-bottom: 10px;
@@ -1475,7 +1436,6 @@ body.on {
   }
 
   /* Portfolio Section */
-
   .portfolio {
     margin-bottom: 40px;
   }
@@ -1510,7 +1470,6 @@ body.on {
   }
 
   /* Practical Section */
-
   .practical .tit-huge {
     position: relative;
     left: -77px;
@@ -1572,7 +1531,6 @@ body.on {
   }
 
   /* Records Section */
-  
   .records .tit-huge {
     position: relative;
     left: 54px;
@@ -1609,7 +1567,6 @@ body.on {
   }
 
   /* Epilogue Section */
-
   .epilogue {
     display: flex;
     flex-direction: column;
@@ -1662,11 +1619,9 @@ body.on {
 }
 
 /* DeskTop */
-
 @media screen and (min-width: 64rem) {
 
   /* Header */
-  
   .header {
     height: 80px;
   }
@@ -1675,7 +1630,6 @@ body.on {
   }
 
   /* Gnb */
-
   .gnb a {
     margin-left: 40px;
     font-size: var(--font-medium);
@@ -1688,7 +1642,6 @@ body.on {
   }
 
   /* Main Common */
-  
   .main .inner {
     position: relative;
     width: 1230px;
@@ -1699,16 +1652,17 @@ body.on {
   }
 
   /* Welcome Section */
-
   .welcome {
-    margin-bottom: 240px;
+    margin-bottom: 340px;
   }
   .welcome .tit-huge {
     left: -125px;
     top: 600px;
   }
   .welcome__box {
-    padding-top: 165px;
+    height: 520px;
+    padding-top: 190px;
+    box-sizing: content-box;
   }
   .welcome__tit {
     font-size: var(--font-huge);
@@ -1721,7 +1675,7 @@ body.on {
   }
   .welcome__text {
     max-width: 540px;
-    margin: 15px 0 70px;
+    margin: 15px 0 117px;
   }
   .welcome__shape {
     overflow: hidden;
@@ -1741,9 +1695,8 @@ body.on {
   }
 
   /* About Section */
-
   .about {
-    margin-bottom: 275px;
+    margin-bottom: 270px;
   }
   .about .tit-huge {
     left: 400px;
@@ -1796,9 +1749,8 @@ body.on {
   }
 
   /* Skills Section */
-
   .skills {
-    margin-bottom: 90px;
+    margin-bottom: 270px;
   }
   .skills .tit-huge {
     position: relative;
@@ -1832,7 +1784,9 @@ body.on {
   }
 
   /* Portfolio Section */
-
+  .portfolio {
+    margin-bottom: 270px;
+  }
   .portfolio .tit-huge {
     position: relative;
     left: 235px;
@@ -1873,7 +1827,9 @@ body.on {
   }
 
   /* Practical Section */
-
+  .practical {
+    margin-bottom: 270px;
+  }
   .practical .tit-huge {
     position: relative;
     left: -128px;
@@ -1925,7 +1881,9 @@ body.on {
   }
 
   /* Records Section */
-
+  .records {
+    margin-bottom: 340px;
+  }
   .records .tit-huge {
     position: relative;
     left: -130px;
@@ -1946,11 +1904,11 @@ body.on {
   }
   
   /* Epilogue Section */
-
   .epilogue {
     position: relative;
     margin-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 105px;
+    padding-bottom: 200px;
   }
   .epilogue .tit-huge {
     position: absolute;
@@ -1961,7 +1919,6 @@ body.on {
     transform-origin: left bottom;
   }
   .epilogue__shape {
-    z-index: -1;
     overflow: hidden;
     position: absolute;
     left: -345px;
@@ -1971,8 +1928,13 @@ body.on {
     background: var(--color-dark);
     text-indent: -9999px; 
   }
+  .epilogue__content {
+    position: relative;
+    width: 440px;
+    height: 430px;
+  }
   .epilogue__content h3 {
-    padding-top: 90px;
+    position: relative;
     margin-bottom: 15px;
     font-size: var(--font-huge);
   }
@@ -1985,15 +1947,19 @@ body.on {
     right: 0;
     top: 105px;
   }
+  .epilogue__foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   .epilogue__foot a {
     margin-right: 15px;
   }
   .epilogue__foot span {
-    margin-left: 175px;
+    margin-left: 171px;
   }
   .btn-top {
-    left: calc(50% + 654px);
+    left: calc(50% + 645px);
     bottom: 90px;
   }
-
 }

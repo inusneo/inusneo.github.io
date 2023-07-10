@@ -2,13 +2,13 @@
 
 /* Loading Page */
 
-const loadingPage = document.querySelector('#loader');
-const mBody = document.querySelector('body');
+// const loadingPage = document.querySelector('#loader');
+// const mBody = document.querySelector('body');
 
-setTimeout( ()=>{
-  mBody.classList.remove('on');
-  loadingPage.parentElement.removeChild(loadingPage);
-}, 2000);
+// setTimeout( ()=>{
+//   mBody.classList.remove('on');
+//   loadingPage.parentElement.removeChild(loadingPage);
+// }, 2000);
 
 /* Gnb Scroll Up & Down Effects */
 
@@ -18,7 +18,7 @@ const gnbMenu = document.querySelectorAll('.gnb a');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
+  let currentScroll = window.scrollY;
   //console.log('scroll', scroll);
   if (currentScroll <= 0) {
     header.classList.remove('scroll-up');
@@ -38,9 +38,9 @@ window.addEventListener('scroll', () => {
 
   sections.forEach( section => {
     const sectionTop = section.offsetTop;
-    const sectionHt = section.clientHeight;
+    // const sectionHt = section.clientHeight;
 
-    if (pageYOffset >= sectionTop) {
+    if (scrollY >= sectionTop) {
       cur = section.getAttribute('id');
     }
   });
