@@ -1,7 +1,27 @@
 /* Common CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Pretendard-Regular.subset.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/Pretendard-Medium.subset.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: bold;
+	src: url(../fonts/Pretendard-Bold.subset.woff2) format('woff2');
+}
 
 :root {
   --color-deep-dark: #131416;
@@ -40,6 +60,10 @@ body {
 .font-poppins {
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
+}
+
+.font-pretendard {
+  font-family: 'Pretendard', sans-serif;
 }
 
 .color-point {

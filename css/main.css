@@ -184,7 +184,7 @@ body.on {
   font-weight: 700;
 }
 .welcome__text {
-  opacity: .7;
+  opacity: .8;
   word-break: break-all;
 }
 
@@ -205,10 +205,10 @@ body.on {
   font-weight: 500;
 }
 .about__text {
-  opacity: .7;
+  opacity: .8;
   line-height: 1.6;
   text-align: justify;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 .about__history {
   display: flex;
@@ -221,13 +221,14 @@ body.on {
   border-top: 1px solid rgba(249, 255, 253, 0.5);
 }
 .about__history span {
-  opacity: .7;
-  font-family: 'Nanum Gothic', sans-serif;
+  opacity: .8;
+  font-family: 'Pretendard', sans-serif;
 }
 .about__license p {
   margin: 6px 0 30px;
-  padding-top: 6px;
+  padding-top: 8px;
   border-top: 1px solid rgba(249, 255, 253, 0.5);
+  font-family: 'Pretendard', sans-serif;
 }
 .about__more {
   display: flex;
@@ -290,7 +291,7 @@ body.on {
   opacity: .5;
   line-height: 1.6;
   text-align: justify;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 .skills__lang li:first-of-type dt {
   background: url(../images/icon_html5.png) no-repeat 50% 0;
@@ -399,13 +400,15 @@ body.on {
   color: var(--color-point);
   font-weight: 500;
 }
+.portfolio__desc__tit {
+  color: var(--color-white);
+}
 .portfolio__txt p {
   color: rgba(249, 255, 253, 0.7);
   line-height: 1.8;
 }
 .portfolio__txt span {
   display: inline-block;
-  color: var(--color-white);
 }
 .portfolio__img {
   position: relative;
@@ -673,13 +676,20 @@ body.on {
   margin-bottom: 5px;
   color: var(--color-point);
   font-weight: 700;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 .records__info p {
-  opacity: .7;
+  opacity: .8;
+  width: 255px;
   line-height: 1.6;
-  text-align: justify;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-break: keep-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* Epilogue Section */
@@ -688,10 +698,10 @@ body.on {
   font-weight: 700;
 }
 .epilogue__txt {
-  opacity: .7;
+  opacity: .8;
   line-height: 1.7;
   text-align: justify;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 .epilogue__foot a {
   opacity: .5;
