@@ -2,13 +2,13 @@
 
 /* Loading Page */
 
-// const loadingPage = document.querySelector('#loader');
-// const mBody = document.querySelector('body');
+const loadingPage = document.querySelector('#loader');
+const mBody = document.querySelector('body');
 
-// setTimeout( ()=>{
-//   mBody.classList.remove('on');
-//   loadingPage.parentElement.removeChild(loadingPage);
-// }, 2000);
+setTimeout( ()=>{
+  mBody.classList.remove('on');
+  loadingPage.parentElement.removeChild(loadingPage);
+}, 2000);
 
 /* Gnb Scroll Up & Down Effects */
 
@@ -82,6 +82,13 @@ hamburg.addEventListener('click', (e) => {
   gnbDrawer.classList.toggle('active');
   mBody.classList.toggle('on');
   dim.classList.toggle('on');
+});
+dim.addEventListener('click', (e) => {
+  e.currentTarget.classList.remove('on');
+  hamburg.classList.remove('on');
+  gnbDrawer.classList.remove('active');
+  mBody.classList.remove('on');
+  dim.classList.remove('on');
 });
 
 /* Drawer Menu Click Function */

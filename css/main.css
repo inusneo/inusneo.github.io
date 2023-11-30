@@ -716,18 +716,24 @@ body.on {
   display: inline-block;
 }
 .btn-top {
+  z-index: 10;
   display: none;
   position: fixed;
 }
 
 /* Mobile */
 @media screen and (max-width: 47.938rem) {
-  
-  /* Dim */
+  /* Common */
   body {
+    min-width: 320px;
     font-size: var(--font-small);
   }
+  img {
+    display: block;
+    width: 100%;
+  }
   .dim.on {
+    overflow: hidden;
     z-index: 10;
     position: absolute;
     left: 0;
@@ -739,10 +745,11 @@ body.on {
 
   /* Header */
   .header {
-    height: 40px;
+    height: 50px;
+    padding: 0 20px;
   }
-  .header .inner {
-    width: 345px;
+  .logo a {
+    display: block;
   }
   .logo img {
     height: 30px;
@@ -806,7 +813,9 @@ body.on {
     margin-bottom: 30px;
   }
   .logo-mobile img {
+    width: auto;
     height: 36px;
+    padding-left: 14px;
     image-rendering: -webkit-optimize-contrast;
   }
   .gnb__wrap {
@@ -849,11 +858,11 @@ body.on {
   /* Main Common */
   .main .inner {
     position: relative;
-    width: 345px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
   }
   .tit-huge {
-    font-size: var(--font-huge);
+    font-size: var(--font-large);
   }
   .btn-square {
     padding: 10px 20px;
@@ -888,10 +897,6 @@ body.on {
   .about {
     margin: 60px 0;
   }
-  .about .tit-huge {
-    font-size: 60px;
-    white-space: nowrap;
-  }
   .about__shape {
     display: none;
   }
@@ -907,7 +912,7 @@ body.on {
     font-size: 2rem;
   }
   .about__text {
-    display: none;
+    margin-top: 5px;
   }
   .about__history {
     display: block;
@@ -926,11 +931,11 @@ body.on {
     font-size: var(--font-small);
     margin-bottom: 20px;
   }
+  .about__more {
+    display: initial;
+  }
   .about__more h4 {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 1px solid #fff;
-    white-space: nowrap;
+    margin-bottom: 14px;
   }
   
   /* Skills Section */
@@ -962,6 +967,7 @@ body.on {
   }
   .skills__box dd {
     font-size: 0.75rem;
+    word-break: break-all;
   }
 
   /* Skills Tools */
@@ -1123,6 +1129,9 @@ body.on {
   }
 
   /* Records Section */
+  .records {
+    overflow-x: hidden;
+  }
   .records .tit-huge {
     position: relative;
     right: 0;
@@ -1167,7 +1176,7 @@ body.on {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 60px 0;
+    margin-top: 60px;
     padding-bottom: 90px;
   }
   .epilogue .item01 {
@@ -1205,7 +1214,7 @@ body.on {
     content: '';
   }
   .btn-top {
-    left: calc(50% + 324px);
+    right: 80px;
     bottom: 90px;
   }
   .btn-circle--prev {
@@ -1971,5 +1980,12 @@ body.on {
   .btn-top {
     left: calc(50% + 645px);
     bottom: 90px;
+  }
+}
+
+/* Mobile - min */
+@media screen and (max-width: 20rem) {
+  .tit-huge {
+    font-size: 42px;
   }
 }
