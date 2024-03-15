@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window API part3</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: dimgray;
+  }
+  .line {
+    position: absolute;
+    background-color: aquamarine;
+  }
+  .line-horizontal {
+    width: 100%;
+    height: 1px;
+  }
+  .line-vertical {
+    width: 1px;
+    height: 100%;
+  }
+  img {
+    position: absolute;
+  }
+  .tag {
+    position: absolute;
+    margin: 20px 0 0 20px;
+    color: aquamarine;
+    font-size: 1.6rem;
+  }
+</style>
+<body>
+  <div class="line line-horizontal"></div>
+  <div class="line line-vertical"></div>
+  <img class="target" src="imgs/target.png" alt="">
+  <span class="tag"></span>
+  <script>
+    const horizontalEl = document.querySelector('.line-horizontal');
+    const verticalEl = document.querySelector('.line-vertical');
+    const targetEl = document.querySelector('.target');
+    const tagEl = document.querySelector('.tag');
+
+    addEventListener('load', () => {
+      const targetRect = targetEl.getBoundingClientRect();
+      const targetElHalfWidth = targetRect.width / 2;
+      const targetElHalfHeight = targetRect.height / 2;
+
+      document.addEventListener('mousemove', (e) => {
+        const textX = e.clientX;
+        const textY = e.clientY;
+        
+        verticalEl.style.transform = `translateX(${textX}px)`;
+        horizontalEl.style.transform = `translateY(${textY}px)`;
+        targetEl.style.transform = `translate(${textX - targetElHalfWidth}px, ${textY - targetElHalfHeight}px)`;
+        tagEl.style.transform = `translate(${textX}px, ${textY}px)`;
+        tagEl.textContent = `${textX}px, ${textY}px`;
+      });
+    });
+  </script>
+</body>
+</html>

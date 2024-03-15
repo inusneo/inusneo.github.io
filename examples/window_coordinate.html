@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window API part2</title>
+</head>
+<style>
+  .rect {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: burlywood;
+  }
+  .rect_check {
+    background-color: chocolate;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="rect"></div>
+  <div class="rect"></div>
+  <div class="rect"></div>
+  <div class="rect"></div>
+  <div id="special" class="rect rect_check"></div>
+  <div class="rect"></div>
+  <div class="rect"></div>
+
+  <script>
+    const rectClickEl = document.querySelector('.rect_check');
+
+    rectClickEl.addEventListener('click', e => {
+      const rect = rectClickEl.getBoundingClientRect();
+      console.log(rect);
+      console.log(`client: ${e.clientX}, ${e.clientY}`);
+      console.log(`page: ${e.pageX}, ${e.pageY}`);
+    });
+  </script>
+</body>
+</html>

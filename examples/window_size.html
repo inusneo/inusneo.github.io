@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window API part1</title>
+</head>
+<body>
+  <p>window.screen: <span class="window-screen"></span>,</p>
+  <p>window.outer: <span class="window-outer"></span></p>
+  <p>window.inner: <span class="window-inner"></span></p>
+  <p>documentElement.clientWidth: <span class="document-size"></span></p>
+
+  <script>
+    const windowScreenEl = document.querySelector('.window-screen');
+    const windowOuterEl = document.querySelector('.window-outer');
+    const windowInnerEl = document.querySelector('.window-inner');
+    const documentEl = document.querySelector('.document-size');
+
+    function updateSize() {
+      windowScreenEl.textContent = `${window.screen.width}, ${window.screen.height}`;
+      windowOuterEl.textContent = `${window.outerWidth}, ${window.outerHeight}`;
+      windowInnerEl.textContent = `${window.innerWidth}, ${window.innerHeight}`;
+      documentEl.textContent = `${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`;
+    }
+
+    window.addEventListener('resize', function() {
+      updateSize();
+    });
+    
+    updateSize();
+  </script>
+</body>
+</html>
