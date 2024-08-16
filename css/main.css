@@ -470,6 +470,13 @@ body.on {
   transform: translateY(30px);
   transition: all .3s cubic-bezier(.05, .2, .1, 1) .2s;
 }
+.portfolio__details .btn-square:hover {
+  border-color: var(--color-white);
+  background: transparent;
+  color: var(--color-white);
+  font-weight: 400;
+  transform: none;
+}
 .portfolio__pagination {
   color: var(--color-point);
   font-size: var(--font-medium);

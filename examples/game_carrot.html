@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game - Carrot</title>
+  <script src="https://kit.fontawesome.com/dba4c0267b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #111;
+    height: 100vh;
+    padding-top: 100px;
+  }
+  button {
+    appearance: none;
+    background: none;
+    border: none;
+  }
+  .wrap {
+    position: relative;
+    overflow: hidden;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    background: url(./imgs/background_game.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    border-radius: 5vw;
+  }
+  .controller {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: 4px solid #222;
+    background-color: antiquewhite;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .timer {
+    width: 200px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 4px solid #222;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .count {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid #222;
+    background-color: #c98450;
+    font-size: 3rem;
+    color: antiquewhite;
+  }
+  .area {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 540px;
+  }
+  .carrot {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('./imgs/carrot_game.png') no-repeat 0 0;
+    cursor: pointer;
+  }
+  .bug {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('./imgs/bug.png') no-repeat 0 0;
+    cursor: pointer;
+  }
+  .message_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 540px;
+    left: 50%;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    border: 4px solid #222;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .message_box-hide {
+    display: none;
+  }
+  .message {
+    margin-top: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+</style>
+<body>
+  <div class="wrap">
+    <div class="controller">
+      <button type="butoon" class="btn btn_play"><i class="fa-solid fa-play icon"></i></button>
+      <p class="timer">0:0</p>
+      <p class="count">9</p>
+    </div>
+    <div class="area">
+      <!-- <div class="carrot"></div>
+      <div class="bug"></div> -->
+    </div>
+    <div class="message_box message_box-hide">
+      <button type="button" class="btn btn_refresh"><i class="fa-solid fa-arrows-rotate icon"></i></button>
+      <p class="message">Hello</p>
+    </div>
+  </div>
+  <script>
+    const btnPlay = document.querySelector('.btn_play');
+    const fieldArea = document.querySelector('.area');
+    const fieldAreaRect = fieldArea.getBoundingClientRect();
+    
+    function createEl(className) {
+      const itemEl = document.createElement('div');
+      itemEl.classList.add(className);
+
+      const posX = randomPosition(0, fieldAreaRect.width - 80);
+      const posY = randomPosition(0, fieldAreaRect.height - 80);
+
+      itemEl.style.left = `${posX}px`;
+      itemEl.style.top = `${posY}px`;
+
+      fieldArea.append(itemEl);
+    }
+
+    function randomPosition(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function init() {
+      // 5~20 사이 랜덤한 숫자 추출
+      const randomNumber = Math.floor(Math.random() * 16) + 5;
+
+      for (let i = 0; i <= randomNumber; i++) {
+        createEl('carrot');
+        createEl('bug');
+      }
+    }
+
+    function addClickEventToCarrots() {
+      const carrotEls = document.querySelectorAll('.carrot');
+
+      carrotEls.forEach(carrotEl => {
+        carrotEl.addEventListener('click', () => {
+          // 클릭된 당근 요소를 제거하거나 다른 작업을 수행할 수 있습니다.
+          console.log('당근');
+        });
+      });
+    }
+
+    // 남은 시간(당근 갯수)
+    // 남은 당근 갯수
+
+    // 버튼 클릭
+    btnPlay.addEventListener('click', () => {
+      init();
+      addClickEventToCarrots();
+    });
+  </script>
+</body>
+</html>

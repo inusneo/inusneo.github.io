@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .shadow {
+      width: 60px;
+      height: 60px;
+      margin: 30px;
+      border-radius: 8px;
+      background-color: #fff;
+      font-size: 0;
+    }
+    /* .shadow + .shadow {
+      border-top: 1px solid rgba(8, 29, 82, 0.08);
+    } */
+    .shadow1 {
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+    }
+    .shadow2 {
+      box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.04), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
+    }
+    .shadow3 {
+      box-shadow: 1px 8px 6px 0px #0000000D, 0px 0px 3px 0px #0000001F;
+    }
+    .shadow4 {
+      box-shadow: 0px 12px 18px 0px #0000000D, 0px 0px 3px 0px #0000001A;
+    }
+    .shadow5 {
+      box-shadow: 0px 24px 22px 0px #0000000F, 0px 0px 2px 0px #0000001A;
+    }
+  </style>
+</head>
+<body>
+  <div class="shadow shadow1">test</div>
+  <div class="shadow shadow2">test</div>
+  <div class="shadow shadow3">test</div>
+  <div class="shadow shadow4">test</div>
+  <div class="shadow shadow5">test</div>
+</body>
+</html>
