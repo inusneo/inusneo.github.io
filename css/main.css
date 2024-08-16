@@ -981,6 +981,9 @@ body.on {
   .skills__tools h3 {
     font-size: var(--font-regular);
   }
+  .skills__list {
+    margin-top: .625rem;
+  }
   .skills__list li {
     height: 90px;
   }
