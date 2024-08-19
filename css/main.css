@@ -34,6 +34,8 @@ body.on {
   width: 60px;
   height: 60px;
   line-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: 2px solid var(--color-point);
   border-radius: 50%;
   text-align: center;
@@ -43,15 +45,15 @@ body.on {
 .btn-circle--prev {
   left: -90px;
   top: calc(50% - 15px);
-  background: url(../images/icon_arr_prev.png) no-repeat 50% 50%;
+  background-image: url(../images/icon_arr_prev.png);
 }
 .btn-circle--next {
   right: -90px;
   top: calc(50% - 15px);
-  background: url(../images/icon_arr_next.png) no-repeat 50% 50%;
+  background-image: url(../images/icon_arr_next.png);
 }
 .btn-circle--top {
-  background: url(../images/icon_arr_up.png) no-repeat 50% 50%;
+  background-image: url(../images/icon_arr_up.png);
   cursor: pointer;
 }
 .btn-circle:hover {
@@ -293,23 +295,27 @@ body.on {
   text-align: justify;
   font-family: 'Pretendard', sans-serif;
 }
+.skills__lang li dt {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 .skills__lang li:first-of-type dt {
-  background: url(../images/icon_html5.png) no-repeat 50% 0;
+  background-image: url(../images/icon_html5.png);
 }
 .skills__lang li:nth-of-type(2) dt {
-  background: url(../images/icon_css3.png) no-repeat 50% 0;
+  background-image: url(../images/icon_css3.png);
 }
 .skills__lang li:nth-of-type(3) dt {
-  background: url(../images/icon_js.png) no-repeat 50% 0;
+  background-image: url(../images/icon_js.png);
 }
 .skills__lang li:nth-of-type(4) dt {
-  background: url(../images/icon_sass.png) no-repeat 50% 0;
+  background-image: url(../images/icon_sass.png);
 }
 .skills__lang li:nth-of-type(5) dt {
-  background: url(../images/icon_react.png) no-repeat 50% 0;
+  background-image: url(../images/icon_react.png);
 }
 .skills__lang li:last-of-type dt {
-  background: url(../images/icon_jquery.png) no-repeat 50% 0;
+  background-image: url(../images/icon_jquery.png);
 }
 
 /* Skills lang Hover Effect */
@@ -1245,7 +1251,10 @@ body.on {
   .btn-circle--next {
     display: none;
   }
-
+  .btn-circle--top:hover {
+    background-color: transparent;
+    background-image: url(../images/icon_arr_up.png);
+  }
 }
 
 /* Tablet */
@@ -1636,6 +1645,10 @@ body.on {
   .btn-top {
     left: calc(50% + 304px);
     bottom: 90px;
+  }
+  .btn-circle--top:hover {
+    background-color: transparent;
+    background-image: url(../images/icon_arr_up.png);
   }
 }
 
