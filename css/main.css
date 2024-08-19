@@ -343,6 +343,9 @@ body.on {
   font-size: var(--font-medium);
   font-weight: 500;
 }
+.skills__list {
+  margin-top: .625rem;
+}
 .skills__list li {
   position: relative;
   height: 145px;
@@ -363,26 +366,33 @@ body.on {
   box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.25);
   transform: translateY(5px);
 }
+.skills__list li p {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 .skills__list li:first-of-type p {
-  background: url(../images/icon_ps.png) no-repeat 50% 0;
+  background-image: url(../images/icon_git.png);
 }
 .skills__list li:nth-of-type(2) p {
-  background: url(../images/icon_ai.png) no-repeat 50% 0;
+  background-image: url(../images/icon_ps.png);
 }
 .skills__list li:nth-of-type(3) p {
-  background: url(../images/icon_xd.png) no-repeat 50% 0;
+  background-image: url(../images/icon_ai.png);
 }
 .skills__list li:nth-of-type(4) p {
-  background: url(../images/icon_figma.png) no-repeat 50% 0;
+  background-image: url(../images/icon_xd.png);
 }
 .skills__list li:nth-of-type(5) p {
-  background: url(../images/icon_vscode.png) no-repeat 50% 0;
+  background-image: url(../images/icon_figma.png);
 }
 .skills__list li:nth-of-type(6) p {
-  background: url(../images/icon_slack.png) no-repeat 50% 0;
+  background-image: url(../images/icon_vscode.png);
+}
+.skills__list li:nth-of-type(7) p {
+  background-image: url(../images/icon_slack.png);
 }
 .skills__list li:last-of-type p {
-  background: url(../images/icon_fz.png) no-repeat 50% 0;
+  background-image: url(../images/icon_fz.png);
 }
 
 /* Portfolio Section */
@@ -720,6 +730,7 @@ body.on {
 }
 .epilogue__foot span {
   opacity: .5;
+  float: right;
   display: inline-block;
 }
 .btn-top {
@@ -998,25 +1009,28 @@ body.on {
     transition: all .3s ease-in-out;
   }
   .skills__list li:first-of-type p {
-    background: url(../images/icon_ps_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_git_m.png);
   }
   .skills__list li:nth-of-type(2) p {
-    background: url(../images/icon_ai_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_ps_m.png);
   }
   .skills__list li:nth-of-type(3) p {
-    background: url(../images/icon_xd_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_ai_m.png);
   }
   .skills__list li:nth-of-type(4) p {
-    background: url(../images/icon_figma_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_xd_m.png);
   }
   .skills__list li:nth-of-type(5) p {
-    background: url(../images/icon_vscode_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_figma_m.png);
   }
   .skills__list li:nth-of-type(6) p {
-    background: url(../images/icon_slack_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_vscode_m.png);
+  }
+  .skills__list li:nth-of-type(7) p {
+    background-image: url(../images/icon_slack_m.png);
   }
   .skills__list li:last-of-type p {
-    background: url(../images/icon_fz_m.png) no-repeat 50% 0;
+    background-image: url(../images/icon_fz_m.png);
   }
 
   /* Portfolio Section */
@@ -1215,9 +1229,6 @@ body.on {
   }
   .epilogue__foot a {
     margin-right: 15px;
-  }
-  .epilogue__foot span {
-    float: right;
   }
   .epilogue__foot::after {
     display: block;
@@ -1589,7 +1600,7 @@ body.on {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 90px 0 60px;
+    margin: 90px 0 100px;
   }
   .epilogue .item01 {
     order: 2;
@@ -1616,9 +1627,6 @@ body.on {
   }
   .epilogue__foot a {
     margin-right: 15px;
-  }
-  .epilogue__foot span {
-    float: right;
   }
   .epilogue__foot::after {
     display: block;
@@ -1712,7 +1720,7 @@ body.on {
     margin-bottom: 270px;
   }
   .about .tit-huge {
-    left: 400px;
+    left: 210px;
     margin-bottom: 70px;
   }
   .about__shape {
@@ -1964,12 +1972,10 @@ body.on {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
   }
   .epilogue__foot a {
     margin-right: 15px;
-  }
-  .epilogue__foot span {
-    margin-left: 171px;
   }
   .btn-top {
     left: calc(50% + 645px);
